@@ -1,0 +1,571 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://theme/sci-fi-theme.tres" type="Theme" id=1]
+
+[node name="Main" type="Node2D"]
+
+[node name="PanelInfo" type="Panel" parent="."]
+margin_left = 4.0
+margin_right = 314.0
+margin_bottom = 100.0
+rect_scale = Vector2( 2, 2 )
+theme = ExtResource( 1 )
+
+[node name="InputName" type="TextEdit" parent="PanelInfo"]
+margin_left = 18.0
+margin_top = 11.0
+margin_right = 298.0
+margin_bottom = 32.0
+text = "Name"
+caret_block_mode = true
+caret_blink = true
+
+[node name="OptionRace" type="OptionButton" parent="PanelInfo"]
+margin_left = 18.0
+margin_top = 68.5
+margin_right = 136.0
+margin_bottom = 93.5
+text = "Dwarf"
+items = [ "Dwarf", null, false, 0, null, "Gnome", null, false, 1, null, "High Auric", null, false, 2, null, "Human", null, false, 3, null, "Low Auric", null, false, 4, null, "Troll", null, false, 5, null ]
+selected = 0
+
+[node name="OptionClass" type="OptionButton" parent="PanelInfo"]
+margin_left = 158.0
+margin_top = 68.5
+margin_right = 294.0
+margin_bottom = 93.5
+text = "Auromancer"
+items = [ "Auromancer", null, false, 0, null, "NIGHT Agent", null, false, 1, null, "Revolutionary", null, false, 2, null, "Technomancer", null, false, 3, null, "Terramancer", null, false, 4, null, "Vanguard", null, false, 5, null ]
+selected = 0
+
+[node name="SpinBoxAge" type="SpinBox" parent="PanelInfo"]
+margin_left = 58.0
+margin_top = 41.0
+margin_right = 118.0
+margin_bottom = 61.0
+max_value = 250.0
+
+[node name="SpinBoxMissions" type="SpinBox" parent="PanelInfo"]
+margin_left = 238.0
+margin_top = 41.0
+margin_right = 298.0
+margin_bottom = 61.0
+max_value = 20.0
+
+[node name="LabelAge" type="Label" parent="PanelInfo"]
+margin_left = 18.0
+margin_top = 41.0
+margin_right = 43.0
+margin_bottom = 61.0
+text = "Age:"
+valign = 1
+
+[node name="LabelMissions" type="Label" parent="PanelInfo"]
+margin_left = 163.5
+margin_top = 41.0
+margin_right = 223.5
+margin_bottom = 61.0
+text = "Missions:"
+valign = 1
+
+[node name="PanelAbilities" type="Panel" parent="."]
+margin_left = 3.0
+margin_top = 216.0
+margin_right = 313.0
+margin_bottom = 648.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="LabelAbilities" type="Label" parent="PanelAbilities"]
+margin_left = 104.0
+margin_top = 10.0
+margin_right = 194.0
+margin_bottom = 19.0
+text = "ABILITY SCORES"
+
+[node name="LabelStrength" type="Label" parent="PanelAbilities"]
+margin_left = 29.5
+margin_top = 24.0
+margin_right = 93.5
+margin_bottom = 42.0
+text = "Strength: +"
+align = 2
+valign = 1
+
+[node name="LabelAgility" type="Label" parent="PanelAbilities"]
+margin_left = 29.0
+margin_top = 45.0
+margin_right = 93.0
+margin_bottom = 63.0
+text = "Agility: +"
+align = 2
+valign = 1
+
+[node name="LabelWill" type="Label" parent="PanelAbilities"]
+margin_left = 29.5
+margin_top = 65.0
+margin_right = 93.5
+margin_bottom = 83.0
+text = "Will: +"
+align = 2
+valign = 1
+
+[node name="LabelCharisma" type="Label" parent="PanelAbilities"]
+margin_left = 28.0
+margin_top = 86.0
+margin_right = 94.0
+margin_bottom = 104.0
+text = "Charisma: +"
+valign = 1
+
+[node name="LabelSkills" type="Label" parent="PanelAbilities"]
+margin_left = 118.5
+margin_top = 112.0
+margin_right = 158.5
+margin_bottom = 121.0
+text = "SKILLS"
+
+[node name="LabelAthletics" type="Label" parent="PanelAbilities"]
+margin_left = 28.5
+margin_top = 124.5
+margin_right = 93.5
+margin_bottom = 144.5
+text = "Athletics: +"
+align = 2
+valign = 1
+
+[node name="LabelAwareness" type="Label" parent="PanelAbilities"]
+margin_left = 17.0
+margin_top = 145.5
+margin_right = 94.0
+margin_bottom = 163.5
+text = "Awareness: +"
+align = 2
+valign = 1
+
+[node name="LabelDiscernment" type="Label" parent="PanelAbilities"]
+margin_left = 9.0
+margin_top = 165.5
+margin_right = 94.0
+margin_bottom = 183.5
+text = "Discernment: +"
+align = 2
+valign = 1
+
+[node name="LabelDrama" type="Label" parent="PanelAbilities"]
+margin_left = 29.5
+margin_top = 185.5
+margin_right = 93.5
+margin_bottom = 203.5
+text = "Drama: +"
+align = 2
+valign = 1
+
+[node name="LabelGrappling" type="Label" parent="PanelAbilities"]
+margin_left = 27.0
+margin_top = 205.5
+margin_right = 94.0
+margin_bottom = 223.5
+text = "Grappling: +"
+align = 2
+valign = 1
+
+[node name="LabelHacking" type="Label" parent="PanelAbilities"]
+margin_left = 29.5
+margin_top = 226.5
+margin_right = 93.5
+margin_bottom = 244.5
+text = "Hacking: +"
+align = 2
+valign = 1
+
+[node name="LabelHealing" type="Label" parent="PanelAbilities"]
+margin_left = 28.5
+margin_top = 246.5
+margin_right = 92.5
+margin_bottom = 264.5
+text = "Healing: +"
+align = 2
+valign = 1
+
+[node name="LabelKnowledge" type="Label" parent="PanelAbilities"]
+margin_left = 18.0
+margin_top = 267.5
+margin_right = 93.0
+margin_bottom = 285.5
+text = "Knowledge: +"
+align = 2
+valign = 1
+
+[node name="LabelMancy" type="Label" parent="PanelAbilities"]
+margin_left = 28.5
+margin_top = 289.0
+margin_right = 92.5
+margin_bottom = 307.0
+text = "Mancy: +"
+align = 2
+valign = 1
+
+[node name="LabelNature" type="Label" parent="PanelAbilities"]
+margin_left = 29.0
+margin_top = 310.0
+margin_right = 93.0
+margin_bottom = 328.0
+text = "Nature: +"
+align = 2
+valign = 1
+
+[node name="LabelNegotiation" type="Label" parent="PanelAbilities"]
+margin_left = 14.5
+margin_top = 330.0
+margin_right = 93.5
+margin_bottom = 348.0
+text = "Negotiation: +"
+align = 2
+valign = 1
+
+[node name="LabelStealth" type="Label" parent="PanelAbilities"]
+margin_left = 29.5
+margin_top = 347.5
+margin_right = 93.5
+margin_bottom = 365.5
+text = "Stealth: +"
+align = 2
+valign = 1
+
+[node name="LabelThievery" type="Label" parent="PanelAbilities"]
+margin_left = 25.5
+margin_top = 367.5
+margin_right = 93.5
+margin_bottom = 385.5
+text = "Thievery: +"
+align = 2
+valign = 1
+
+[node name="LabelTumbling" type="Label" parent="PanelAbilities"]
+margin_left = 29.0
+margin_top = 388.0
+margin_right = 93.0
+margin_bottom = 406.0
+text = "Tumbling: +"
+align = 2
+valign = 1
+
+[node name="LabelVehicles" type="Label" parent="PanelAbilities"]
+margin_left = 28.5
+margin_top = 408.0
+margin_right = 92.5
+margin_bottom = 426.0
+text = "Vehicles: +"
+align = 2
+valign = 1
+
+[node name="ValueStrength" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 24.0
+margin_right = 135.0
+margin_bottom = 43.0
+text = "0"
+readonly = true
+
+[node name="ValueAgility" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 45.0
+margin_right = 135.0
+margin_bottom = 64.0
+text = "0"
+readonly = true
+
+[node name="ValueWill" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 65.0
+margin_right = 135.0
+margin_bottom = 84.0
+text = "0"
+readonly = true
+
+[node name="ValueCharisma" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 86.0
+margin_right = 135.0
+margin_bottom = 105.0
+text = "0"
+readonly = true
+
+[node name="ValueAthletics" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 124.5
+margin_right = 135.0
+margin_bottom = 143.5
+text = "0"
+readonly = true
+
+[node name="ValueAwareness" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 145.5
+margin_right = 135.0
+margin_bottom = 164.5
+text = "0"
+readonly = true
+
+[node name="ValueDiscernment" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 167.0
+margin_right = 135.0
+margin_bottom = 186.0
+text = "0"
+readonly = true
+
+[node name="ValueDrama" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 186.0
+margin_right = 135.0
+margin_bottom = 205.0
+text = "0"
+readonly = true
+
+[node name="ValueGrappling" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 206.5
+margin_right = 135.0
+margin_bottom = 225.5
+text = "0"
+readonly = true
+
+[node name="ValueHacking" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 226.5
+margin_right = 135.0
+margin_bottom = 245.5
+text = "0"
+readonly = true
+
+[node name="ValueHealing" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 246.5
+margin_right = 135.0
+margin_bottom = 265.5
+text = "0"
+readonly = true
+
+[node name="ValueKnowledge" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 267.5
+margin_right = 135.0
+margin_bottom = 286.5
+text = "0"
+readonly = true
+
+[node name="ValueMancy" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 288.5
+margin_right = 135.0
+margin_bottom = 307.5
+text = "0"
+readonly = true
+
+[node name="ValueNature" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 310.0
+margin_right = 135.0
+margin_bottom = 329.0
+text = "0"
+readonly = true
+
+[node name="ValueNegotiation" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 330.0
+margin_right = 135.0
+margin_bottom = 349.0
+text = "0"
+readonly = true
+
+[node name="ValueStealth" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 347.5
+margin_right = 135.0
+margin_bottom = 366.5
+text = "0"
+readonly = true
+
+[node name="ValueThievery" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 368.0
+margin_right = 135.0
+margin_bottom = 387.0
+text = "0"
+readonly = true
+
+[node name="ValueTumbling" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 388.0
+margin_right = 135.0
+margin_bottom = 407.0
+text = "0"
+readonly = true
+
+[node name="ValueVehicles" type="TextEdit" parent="PanelAbilities"]
+margin_left = 93.0
+margin_top = 407.5
+margin_right = 135.0
+margin_bottom = 426.5
+text = "0"
+readonly = true
+
+[node name="Button" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 24.0
+margin_right = 198.5
+margin_bottom = 43.0
+text = "Roll"
+
+[node name="Button2" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 45.0
+margin_right = 198.5
+margin_bottom = 64.0
+text = "Roll"
+
+[node name="Button3" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 66.0
+margin_right = 198.5
+margin_bottom = 85.0
+text = "Roll"
+
+[node name="Button4" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 86.0
+margin_right = 198.5
+margin_bottom = 105.0
+text = "Roll"
+
+[node name="Button5" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 126.0
+margin_right = 198.5
+margin_bottom = 145.0
+text = "Roll"
+
+[node name="Button6" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 145.5
+margin_right = 198.5
+margin_bottom = 164.5
+text = "Roll"
+
+[node name="Button7" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 167.0
+margin_right = 198.5
+margin_bottom = 186.0
+text = "Roll"
+
+[node name="Button8" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 186.0
+margin_right = 198.5
+margin_bottom = 205.0
+text = "Roll"
+
+[node name="Button9" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 206.5
+margin_right = 198.5
+margin_bottom = 225.5
+text = "Roll"
+
+[node name="Button10" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 226.5
+margin_right = 198.5
+margin_bottom = 245.5
+text = "Roll"
+
+[node name="Button11" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 247.0
+margin_right = 198.5
+margin_bottom = 266.0
+text = "Roll"
+
+[node name="Button12" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 267.5
+margin_right = 198.5
+margin_bottom = 286.5
+text = "Roll"
+
+[node name="Button13" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 289.0
+margin_right = 198.5
+margin_bottom = 308.0
+text = "Roll"
+
+[node name="Button14" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 310.0
+margin_right = 198.5
+margin_bottom = 329.0
+text = "Roll"
+
+[node name="Button15" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 330.0
+margin_right = 198.5
+margin_bottom = 349.0
+text = "Roll"
+
+[node name="Button16" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 348.0
+margin_right = 198.5
+margin_bottom = 367.0
+text = "Roll"
+
+[node name="Button17" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 368.0
+margin_right = 198.5
+margin_bottom = 387.0
+text = "Roll"
+
+[node name="Button18" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 388.0
+margin_right = 198.5
+margin_bottom = 407.0
+text = "Roll"
+
+[node name="Button19" type="Button" parent="PanelAbilities"]
+margin_left = 138.5
+margin_top = 408.0
+margin_right = 198.5
+margin_bottom = 427.0
+text = "Roll"
+
+[node name="PanelCombat" type="Panel" parent="."]
+margin_left = 648.0
+margin_right = 958.0
+margin_bottom = 540.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="LabelCombat" type="Label" parent="PanelCombat"]
+margin_left = 136.0
+margin_top = 11.0
+margin_right = 178.0
+margin_bottom = 20.0
+text = "COMBAT"
+
+[node name="PanelFeats" type="Panel" parent="."]
+margin_left = 1293.0
+margin_right = 1603.0
+margin_bottom = 540.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="LabelFeats" type="Label" parent="PanelFeats"]
+margin_left = 136.5
+margin_top = 11.0
+margin_right = 178.5
+margin_bottom = 20.0
+text = "FEATS"
