@@ -411,133 +411,133 @@ margin_bottom = 426.5
 text = "0"
 readonly = true
 
-[node name="Button" type="Button" parent="PanelAbilities"]
+[node name="ButtonStrength" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 24.0
 margin_right = 198.5
 margin_bottom = 43.0
 text = "Roll"
 
-[node name="Button2" type="Button" parent="PanelAbilities"]
+[node name="ButtonAgility" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 45.0
 margin_right = 198.5
 margin_bottom = 64.0
 text = "Roll"
 
-[node name="Button3" type="Button" parent="PanelAbilities"]
+[node name="ButtonWill" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 66.0
 margin_right = 198.5
 margin_bottom = 85.0
 text = "Roll"
 
-[node name="Button4" type="Button" parent="PanelAbilities"]
+[node name="ButtonCharisma" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 86.0
 margin_right = 198.5
 margin_bottom = 105.0
 text = "Roll"
 
-[node name="Button5" type="Button" parent="PanelAbilities"]
+[node name="ButtonAthletics" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 126.0
 margin_right = 198.5
 margin_bottom = 145.0
 text = "Roll"
 
-[node name="Button6" type="Button" parent="PanelAbilities"]
+[node name="ButtonAwareness" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 145.5
 margin_right = 198.5
 margin_bottom = 164.5
 text = "Roll"
 
-[node name="Button7" type="Button" parent="PanelAbilities"]
+[node name="ButtonDiscernment" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 167.0
 margin_right = 198.5
 margin_bottom = 186.0
 text = "Roll"
 
-[node name="Button8" type="Button" parent="PanelAbilities"]
+[node name="ButtonDrama" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 186.0
 margin_right = 198.5
 margin_bottom = 205.0
 text = "Roll"
 
-[node name="Button9" type="Button" parent="PanelAbilities"]
+[node name="ButtonGrappling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 206.5
 margin_right = 198.5
 margin_bottom = 225.5
 text = "Roll"
 
-[node name="Button10" type="Button" parent="PanelAbilities"]
+[node name="ButtonHacking" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 226.5
 margin_right = 198.5
 margin_bottom = 245.5
 text = "Roll"
 
-[node name="Button11" type="Button" parent="PanelAbilities"]
+[node name="ButtonHealing" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 247.0
 margin_right = 198.5
 margin_bottom = 266.0
 text = "Roll"
 
-[node name="Button12" type="Button" parent="PanelAbilities"]
+[node name="ButtonKnowledge" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 267.5
 margin_right = 198.5
 margin_bottom = 286.5
 text = "Roll"
 
-[node name="Button13" type="Button" parent="PanelAbilities"]
+[node name="ButtonMancy" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 289.0
 margin_right = 198.5
 margin_bottom = 308.0
 text = "Roll"
 
-[node name="Button14" type="Button" parent="PanelAbilities"]
+[node name="ButtonNature" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 310.0
 margin_right = 198.5
 margin_bottom = 329.0
 text = "Roll"
 
-[node name="Button15" type="Button" parent="PanelAbilities"]
+[node name="ButtonNegotiation" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 330.0
 margin_right = 198.5
 margin_bottom = 349.0
 text = "Roll"
 
-[node name="Button16" type="Button" parent="PanelAbilities"]
+[node name="ButtonStealth" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 348.0
 margin_right = 198.5
 margin_bottom = 367.0
 text = "Roll"
 
-[node name="Button17" type="Button" parent="PanelAbilities"]
+[node name="ButtonThievery" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 368.0
 margin_right = 198.5
 margin_bottom = 387.0
 text = "Roll"
 
-[node name="Button18" type="Button" parent="PanelAbilities"]
+[node name="ButtonTumbling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 388.0
 margin_right = 198.5
 margin_bottom = 407.0
 text = "Roll"
 
-[node name="Button19" type="Button" parent="PanelAbilities"]
+[node name="ButtonVehicles" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 408.0
 margin_right = 198.5
@@ -556,6 +556,285 @@ margin_top = 11.0
 margin_right = 178.0
 margin_bottom = 20.0
 text = "COMBAT"
+
+[node name="LabelHP" type="Label" parent="PanelCombat"]
+margin_left = 44.5
+margin_top = 32.0
+margin_right = 109.5
+margin_bottom = 52.0
+text = "HP: "
+align = 2
+valign = 1
+
+[node name="LabelCeridium" type="Label" parent="PanelCombat"]
+margin_left = 151.0
+margin_top = 32.0
+margin_right = 217.0
+margin_bottom = 50.0
+text = "Ceridium: "
+align = 2
+valign = 1
+
+[node name="LabelAC" type="Label" parent="PanelCombat"]
+margin_left = 25.0
+margin_top = 51.0
+margin_right = 110.0
+margin_bottom = 69.0
+text = "Armor Class: "
+align = 2
+valign = 1
+
+[node name="LabelSpellDC" type="Label" parent="PanelCombat"]
+margin_left = 152.0
+margin_top = 51.5
+margin_right = 216.0
+margin_bottom = 69.5
+text = "Spell DC: "
+align = 2
+valign = 1
+
+[node name="LabelInitiative" type="Label" parent="PanelCombat"]
+margin_left = 43.0
+margin_top = 73.0
+margin_right = 110.0
+margin_bottom = 91.0
+text = "Initiative: +"
+align = 2
+valign = 1
+
+[node name="LabelMeleeAttack" type="Label" parent="PanelCombat"]
+margin_left = 24.0
+margin_top = 94.0
+margin_right = 110.0
+margin_bottom = 112.0
+text = "Melee Attack: +"
+align = 2
+valign = 1
+
+[node name="LabelMeleeDamage" type="Label" parent="PanelCombat"]
+margin_left = 18.0
+margin_top = 114.0
+margin_right = 110.0
+margin_bottom = 132.0
+text = "Melee Damage: +"
+align = 2
+valign = 1
+
+[node name="LabelRangedAttack" type="Label" parent="PanelCombat"]
+margin_left = 13.0
+margin_top = 135.0
+margin_right = 110.0
+margin_bottom = 153.0
+text = "Ranged Attack: +"
+align = 2
+valign = 1
+
+[node name="LabelRangedDamage" type="Label" parent="PanelCombat"]
+margin_left = 7.5
+margin_top = 156.5
+margin_right = 110.5
+margin_bottom = 174.5
+text = "Ranged Damage: +"
+align = 2
+valign = 1
+
+[node name="LabelSpellAttack" type="Label" parent="PanelCombat"]
+margin_left = 24.0
+margin_top = 178.0
+margin_right = 111.0
+margin_bottom = 196.0
+text = "Spell Attack: +"
+align = 2
+valign = 1
+
+[node name="LabelEquipment" type="Label" parent="PanelCombat"]
+margin_left = 88.5
+margin_top = 220.0
+margin_right = 233.5
+margin_bottom = 229.0
+text = "EQUIPMENT/CYBERNETICS"
+
+[node name="ValueHP" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 32.0
+margin_right = 151.0
+margin_bottom = 51.0
+text = "0"
+readonly = true
+
+[node name="ValueCeridium" type="TextEdit" parent="PanelCombat"]
+margin_left = 216.0
+margin_top = 32.0
+margin_right = 258.0
+margin_bottom = 51.0
+text = "0"
+readonly = true
+
+[node name="ValueAC" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 52.5
+margin_right = 151.0
+margin_bottom = 71.5
+text = "0"
+readonly = true
+
+[node name="ValueDC" type="TextEdit" parent="PanelCombat"]
+margin_left = 215.5
+margin_top = 52.0
+margin_right = 257.5
+margin_bottom = 71.0
+text = "0"
+readonly = true
+
+[node name="ValueInitiative" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 74.0
+margin_right = 151.0
+margin_bottom = 93.0
+text = "0"
+readonly = true
+
+[node name="ValueMeleeAttack" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 94.0
+margin_right = 151.0
+margin_bottom = 113.0
+text = "0"
+readonly = true
+
+[node name="ValueMeleeDamage" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 114.0
+margin_right = 151.0
+margin_bottom = 133.0
+text = "0"
+readonly = true
+
+[node name="ValueRangedAttack" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 135.0
+margin_right = 151.0
+margin_bottom = 154.0
+text = "0"
+readonly = true
+
+[node name="ValueRangedDamage" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 156.0
+margin_right = 151.0
+margin_bottom = 175.0
+text = "0"
+readonly = true
+
+[node name="ValueSpellAttack" type="TextEdit" parent="PanelCombat"]
+margin_left = 109.0
+margin_top = 177.5
+margin_right = 151.0
+margin_bottom = 196.5
+text = "0"
+readonly = true
+
+[node name="ButtonInitiative" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 74.0
+margin_right = 214.5
+margin_bottom = 93.0
+text = "Roll"
+
+[node name="ButtonMeleeAttack" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 94.0
+margin_right = 214.5
+margin_bottom = 113.0
+text = "Roll"
+
+[node name="ButtonMeleeDamage" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 114.5
+margin_right = 214.5
+margin_bottom = 133.5
+text = "Roll"
+
+[node name="ButtonRangedAttack" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 135.0
+margin_right = 214.5
+margin_bottom = 154.0
+text = "Roll"
+
+[node name="ButtonRangedDamage" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 156.5
+margin_right = 214.5
+margin_bottom = 175.5
+text = "Roll"
+
+[node name="ButtonSpellAttack" type="Button" parent="PanelCombat"]
+margin_left = 154.5
+margin_top = 178.0
+margin_right = 214.5
+margin_bottom = 197.0
+text = "Roll"
+
+[node name="InputStandardGear1" type="TextEdit" parent="PanelCombat"]
+margin_left = 16.0
+margin_top = 239.0
+margin_right = 147.0
+margin_bottom = 321.0
+text = "	-Standard Gear-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="InputAdvancedGear" type="TextEdit" parent="PanelCombat"]
+margin_left = 163.0
+margin_top = 238.5
+margin_right = 294.0
+margin_bottom = 320.5
+text = "	-Advanced Gear-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="InputStandardFactionGear" type="TextEdit" parent="PanelCombat"]
+margin_left = 16.0
+margin_top = 329.5
+margin_right = 147.0
+margin_bottom = 411.5
+text = "	-Standard Faction Gear-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="InputAdvancedFactionGear" type="TextEdit" parent="PanelCombat"]
+margin_left = 163.0
+margin_top = 329.5
+margin_right = 294.0
+margin_bottom = 411.5
+text = "	-Advanced Faction  Gear-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="InputStandardCybernetics" type="TextEdit" parent="PanelCombat"]
+margin_left = 16.0
+margin_top = 421.0
+margin_right = 147.0
+margin_bottom = 503.0
+text = "	-Standard Cybernetics-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="InputAdvancedCybernetics" type="TextEdit" parent="PanelCombat"]
+margin_left = 163.0
+margin_top = 421.0
+margin_right = 294.0
+margin_bottom = 503.0
+text = "	-Advanced Cybernetics-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
 
 [node name="PanelFeats" type="Panel" parent="."]
 margin_left = 1293.0
