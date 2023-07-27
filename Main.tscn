@@ -848,3 +848,47 @@ margin_top = 11.0
 margin_right = 178.5
 margin_bottom = 20.0
 text = "FEATS"
+
+[node name="OptionArchetype" type="OptionButton" parent="PanelFeats"]
+margin_left = 100.5
+margin_top = 28.0
+margin_right = 201.5
+margin_bottom = 48.0
+text = "Option 0"
+items = [ "Option 0", null, false, 0, null, "Option 1", null, false, 1, null ]
+selected = 0
+
+[node name="CheckFeat1" type="CheckBox" parent="PanelFeats"]
+margin_left = 18.5
+margin_top = 52.5
+margin_right = 92.5
+margin_bottom = 80.5
+text = "Feat 1"
+
+[node name="CheckFeat2" type="CheckBox" parent="PanelFeats"]
+margin_left = 153.5
+margin_top = 52.5
+margin_right = 227.5
+margin_bottom = 80.5
+text = "Feat 2"
+
+[node name="CheckFeat3" type="CheckBox" parent="PanelFeats"]
+margin_left = 100.5
+margin_top = 110.0
+margin_right = 174.5
+margin_bottom = 138.0
+text = "Feat 1"
+
+[node name="CheckFeat4" type="CheckBox" parent="PanelFeats"]
+margin_left = 18.5
+margin_top = 110.0
+margin_right = 92.5
+margin_bottom = 138.0
+text = "Feat 1"
+
+[node name="CheckFeat5" type="CheckBox" parent="PanelFeats"]
+margin_left = 201.5
+margin_top = 112.0
+margin_right = 275.5
+margin_bottom = 140.0
+text = "Feat 1"
