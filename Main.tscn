@@ -950,9 +950,9 @@ text = "ABILITY SCORES"
 
 [node name="LabelStrength" type="Label" parent="PanelAbilities"]
 margin_left = 29.5
-margin_top = 24.0
+margin_top = 25.0
 margin_right = 93.5
-margin_bottom = 42.0
+margin_bottom = 43.0
 text = "Strength: +"
 align = 2
 valign = 1
@@ -977,9 +977,9 @@ valign = 1
 
 [node name="LabelCharisma" type="Label" parent="PanelAbilities"]
 margin_left = 28.0
-margin_top = 86.0
+margin_top = 85.0
 margin_right = 94.0
-margin_bottom = 104.0
+margin_bottom = 103.0
 text = "Charisma: +"
 valign = 1
 
@@ -992,144 +992,144 @@ text = "SKILLS"
 
 [node name="LabelAthletics" type="Label" parent="PanelAbilities"]
 margin_left = 28.5
-margin_top = 124.5
+margin_top = 125.0
 margin_right = 93.5
-margin_bottom = 144.5
+margin_bottom = 145.0
 text = "Athletics: +"
 align = 2
 valign = 1
 
 [node name="LabelAwareness" type="Label" parent="PanelAbilities"]
 margin_left = 17.0
-margin_top = 145.5
+margin_top = 145.0
 margin_right = 94.0
-margin_bottom = 163.5
+margin_bottom = 163.0
 text = "Awareness: +"
 align = 2
 valign = 1
 
 [node name="LabelDiscernment" type="Label" parent="PanelAbilities"]
 margin_left = 9.0
-margin_top = 165.5
+margin_top = 165.0
 margin_right = 94.0
-margin_bottom = 183.5
+margin_bottom = 183.0
 text = "Discernment: +"
 align = 2
 valign = 1
 
 [node name="LabelDrama" type="Label" parent="PanelAbilities"]
 margin_left = 29.5
-margin_top = 185.5
+margin_top = 185.0
 margin_right = 93.5
-margin_bottom = 203.5
+margin_bottom = 203.0
 text = "Drama: +"
 align = 2
 valign = 1
 
 [node name="LabelGrappling" type="Label" parent="PanelAbilities"]
 margin_left = 27.0
-margin_top = 205.5
+margin_top = 205.0
 margin_right = 94.0
-margin_bottom = 223.5
+margin_bottom = 223.0
 text = "Grappling: +"
 align = 2
 valign = 1
 
 [node name="LabelHacking" type="Label" parent="PanelAbilities"]
 margin_left = 29.5
-margin_top = 226.5
+margin_top = 225.0
 margin_right = 93.5
-margin_bottom = 244.5
+margin_bottom = 243.0
 text = "Hacking: +"
 align = 2
 valign = 1
 
 [node name="LabelHealing" type="Label" parent="PanelAbilities"]
 margin_left = 28.5
-margin_top = 246.5
+margin_top = 245.0
 margin_right = 92.5
-margin_bottom = 264.5
+margin_bottom = 263.0
 text = "Healing: +"
 align = 2
 valign = 1
 
 [node name="LabelKnowledge" type="Label" parent="PanelAbilities"]
 margin_left = 18.0
-margin_top = 267.5
+margin_top = 265.0
 margin_right = 93.0
-margin_bottom = 285.5
+margin_bottom = 283.0
 text = "Knowledge: +"
 align = 2
 valign = 1
 
 [node name="LabelMancy" type="Label" parent="PanelAbilities"]
 margin_left = 28.5
-margin_top = 289.0
+margin_top = 285.0
 margin_right = 92.5
-margin_bottom = 307.0
+margin_bottom = 303.0
 text = "Mancy: +"
 align = 2
 valign = 1
 
 [node name="LabelNature" type="Label" parent="PanelAbilities"]
 margin_left = 29.0
-margin_top = 310.0
+margin_top = 305.0
 margin_right = 93.0
-margin_bottom = 328.0
+margin_bottom = 323.0
 text = "Nature: +"
 align = 2
 valign = 1
 
 [node name="LabelNegotiation" type="Label" parent="PanelAbilities"]
 margin_left = 14.5
-margin_top = 330.0
+margin_top = 325.0
 margin_right = 93.5
-margin_bottom = 348.0
+margin_bottom = 343.0
 text = "Negotiation: +"
 align = 2
 valign = 1
 
 [node name="LabelStealth" type="Label" parent="PanelAbilities"]
 margin_left = 29.5
-margin_top = 347.5
+margin_top = 345.0
 margin_right = 93.5
-margin_bottom = 365.5
+margin_bottom = 363.0
 text = "Stealth: +"
 align = 2
 valign = 1
 
 [node name="LabelThievery" type="Label" parent="PanelAbilities"]
 margin_left = 25.5
-margin_top = 367.5
+margin_top = 365.0
 margin_right = 93.5
-margin_bottom = 385.5
+margin_bottom = 383.0
 text = "Thievery: +"
 align = 2
 valign = 1
 
 [node name="LabelTumbling" type="Label" parent="PanelAbilities"]
 margin_left = 29.0
-margin_top = 388.0
+margin_top = 385.0
 margin_right = 93.0
-margin_bottom = 406.0
+margin_bottom = 403.0
 text = "Tumbling: +"
 align = 2
 valign = 1
 
 [node name="LabelVehicles" type="Label" parent="PanelAbilities"]
 margin_left = 28.5
-margin_top = 408.0
+margin_top = 405.0
 margin_right = 92.5
-margin_bottom = 426.0
+margin_bottom = 423.0
 text = "Vehicles: +"
 align = 2
 valign = 1
 
 [node name="ValueStrength" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 24.0
+margin_top = 25.0
 margin_right = 135.0
-margin_bottom = 43.0
+margin_bottom = 44.0
 text = "0"
 readonly = true
 
@@ -1151,137 +1151,137 @@ readonly = true
 
 [node name="ValueCharisma" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 86.0
+margin_top = 85.0
 margin_right = 135.0
-margin_bottom = 105.0
+margin_bottom = 104.0
 text = "0"
 readonly = true
 
 [node name="ValueAthletics" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 124.5
+margin_top = 125.0
 margin_right = 135.0
-margin_bottom = 143.5
+margin_bottom = 144.0
 text = "0"
 readonly = true
 
 [node name="ValueAwareness" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 145.5
+margin_top = 145.0
 margin_right = 135.0
-margin_bottom = 164.5
+margin_bottom = 164.0
 text = "0"
 readonly = true
 
 [node name="ValueDiscernment" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 167.0
+margin_top = 165.0
 margin_right = 135.0
-margin_bottom = 186.0
+margin_bottom = 184.0
 text = "0"
 readonly = true
 
 [node name="ValueDrama" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 186.0
+margin_top = 185.0
 margin_right = 135.0
-margin_bottom = 205.0
+margin_bottom = 204.0
 text = "0"
 readonly = true
 
 [node name="ValueGrappling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 206.5
+margin_top = 205.0
 margin_right = 135.0
-margin_bottom = 225.5
+margin_bottom = 224.0
 text = "0"
 readonly = true
 
 [node name="ValueHacking" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 226.5
+margin_top = 225.0
 margin_right = 135.0
-margin_bottom = 245.5
+margin_bottom = 244.0
 text = "0"
 readonly = true
 
 [node name="ValueHealing" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 246.5
+margin_top = 245.0
 margin_right = 135.0
-margin_bottom = 265.5
+margin_bottom = 264.0
 text = "0"
 readonly = true
 
 [node name="ValueKnowledge" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 267.5
+margin_top = 265.0
 margin_right = 135.0
-margin_bottom = 286.5
+margin_bottom = 284.0
 text = "0"
 readonly = true
 
 [node name="ValueMancy" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 288.5
+margin_top = 285.0
 margin_right = 135.0
-margin_bottom = 307.5
+margin_bottom = 304.0
 text = "0"
 readonly = true
 
 [node name="ValueNature" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 310.0
+margin_top = 305.0
 margin_right = 135.0
-margin_bottom = 329.0
+margin_bottom = 324.0
 text = "0"
 readonly = true
 
 [node name="ValueNegotiation" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 330.0
+margin_top = 325.0
 margin_right = 135.0
-margin_bottom = 349.0
+margin_bottom = 344.0
 text = "0"
 readonly = true
 
 [node name="ValueStealth" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 347.5
+margin_top = 345.0
 margin_right = 135.0
-margin_bottom = 366.5
+margin_bottom = 364.0
 text = "0"
 readonly = true
 
 [node name="ValueThievery" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 368.0
+margin_top = 365.0
 margin_right = 135.0
-margin_bottom = 387.0
+margin_bottom = 384.0
 text = "0"
 readonly = true
 
 [node name="ValueTumbling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 388.0
+margin_top = 385.0
 margin_right = 135.0
-margin_bottom = 407.0
+margin_bottom = 404.0
 text = "0"
 readonly = true
 
 [node name="ValueVehicles" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
-margin_top = 407.5
+margin_top = 405.0
 margin_right = 135.0
-margin_bottom = 426.5
+margin_bottom = 424.0
 text = "0"
 readonly = true
 
 [node name="ButtonStrength" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 24.0
+margin_top = 25.0
 margin_right = 198.5
-margin_bottom = 43.0
+margin_bottom = 44.0
 text = "Roll"
 
 [node name="ButtonAgility" type="Button" parent="PanelAbilities"]
@@ -1293,121 +1293,121 @@ text = "Roll"
 
 [node name="ButtonWill" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 66.0
+margin_top = 65.0
 margin_right = 198.5
-margin_bottom = 85.0
+margin_bottom = 84.0
 text = "Roll"
 
 [node name="ButtonCharisma" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 86.0
+margin_top = 85.0
 margin_right = 198.5
-margin_bottom = 105.0
+margin_bottom = 104.0
 text = "Roll"
 
 [node name="ButtonAthletics" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 126.0
+margin_top = 125.0
 margin_right = 198.5
-margin_bottom = 145.0
+margin_bottom = 144.0
 text = "Roll"
 
 [node name="ButtonAwareness" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 145.5
+margin_top = 145.0
 margin_right = 198.5
-margin_bottom = 164.5
+margin_bottom = 164.0
 text = "Roll"
 
 [node name="ButtonDiscernment" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 167.0
+margin_top = 165.0
 margin_right = 198.5
-margin_bottom = 186.0
+margin_bottom = 184.0
 text = "Roll"
 
 [node name="ButtonDrama" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 186.0
+margin_top = 185.0
 margin_right = 198.5
-margin_bottom = 205.0
+margin_bottom = 204.0
 text = "Roll"
 
 [node name="ButtonGrappling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 206.5
+margin_top = 205.0
 margin_right = 198.5
-margin_bottom = 225.5
+margin_bottom = 224.0
 text = "Roll"
 
 [node name="ButtonHacking" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 226.5
+margin_top = 225.0
 margin_right = 198.5
-margin_bottom = 245.5
+margin_bottom = 244.0
 text = "Roll"
 
 [node name="ButtonHealing" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 247.0
+margin_top = 245.0
 margin_right = 198.5
-margin_bottom = 266.0
+margin_bottom = 264.0
 text = "Roll"
 
 [node name="ButtonKnowledge" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 267.5
+margin_top = 265.0
 margin_right = 198.5
-margin_bottom = 286.5
+margin_bottom = 284.0
 text = "Roll"
 
 [node name="ButtonMancy" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 289.0
+margin_top = 285.0
 margin_right = 198.5
-margin_bottom = 308.0
+margin_bottom = 304.0
 text = "Roll"
 
 [node name="ButtonNature" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 310.0
+margin_top = 305.0
 margin_right = 198.5
-margin_bottom = 329.0
+margin_bottom = 324.0
 text = "Roll"
 
 [node name="ButtonNegotiation" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 330.0
+margin_top = 325.0
 margin_right = 198.5
-margin_bottom = 349.0
+margin_bottom = 344.0
 text = "Roll"
 
 [node name="ButtonStealth" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 348.0
+margin_top = 345.0
 margin_right = 198.5
-margin_bottom = 367.0
+margin_bottom = 364.0
 text = "Roll"
 
 [node name="ButtonThievery" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 368.0
+margin_top = 365.0
 margin_right = 198.5
-margin_bottom = 387.0
+margin_bottom = 384.0
 text = "Roll"
 
 [node name="ButtonTumbling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 388.0
+margin_top = 385.0
 margin_right = 198.5
-margin_bottom = 407.0
+margin_bottom = 404.0
 text = "Roll"
 
 [node name="ButtonVehicles" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
-margin_top = 408.0
+margin_top = 405.0
 margin_right = 198.5
-margin_bottom = 427.0
+margin_bottom = 424.0
 text = "Roll"
 
 [node name="PanelCombat" type="Panel" parent="."]
@@ -1425,336 +1425,403 @@ text = "COMBAT"
 
 [node name="LabelHP" type="Label" parent="PanelCombat"]
 margin_left = 44.5
-margin_top = 32.0
+margin_top = 30.0
 margin_right = 109.5
-margin_bottom = 52.0
+margin_bottom = 50.0
 text = "HP: "
 align = 2
 valign = 1
 
 [node name="LabelCeridium" type="Label" parent="PanelCombat"]
 margin_left = 151.0
-margin_top = 32.0
+margin_top = 30.0
 margin_right = 217.0
-margin_bottom = 50.0
+margin_bottom = 48.0
 text = "Ceridium: "
 align = 2
 valign = 1
 
 [node name="LabelAC" type="Label" parent="PanelCombat"]
 margin_left = 25.0
-margin_top = 51.0
+margin_top = 50.0
 margin_right = 110.0
-margin_bottom = 69.0
+margin_bottom = 68.0
 text = "Armor Class: "
 align = 2
 valign = 1
 
 [node name="LabelSpellDC" type="Label" parent="PanelCombat"]
 margin_left = 152.0
-margin_top = 51.5
+margin_top = 50.0
 margin_right = 216.0
-margin_bottom = 69.5
+margin_bottom = 68.0
 text = "Spell DC: "
 align = 2
 valign = 1
 
 [node name="LabelInitiative" type="Label" parent="PanelCombat"]
 margin_left = 43.0
-margin_top = 73.0
+margin_top = 70.0
 margin_right = 110.0
-margin_bottom = 91.0
+margin_bottom = 88.0
 text = "Initiative: +"
 align = 2
 valign = 1
 
 [node name="LabelMeleeAttack" type="Label" parent="PanelCombat"]
 margin_left = 24.0
-margin_top = 94.0
+margin_top = 90.0
 margin_right = 110.0
-margin_bottom = 112.0
+margin_bottom = 108.0
 text = "Melee Attack: +"
 align = 2
 valign = 1
 
 [node name="LabelMeleeDamage" type="Label" parent="PanelCombat"]
 margin_left = 18.0
-margin_top = 114.0
+margin_top = 110.0
 margin_right = 110.0
-margin_bottom = 132.0
+margin_bottom = 128.0
 text = "Melee Damage: +"
 align = 2
 valign = 1
 
 [node name="LabelRangedAttack" type="Label" parent="PanelCombat"]
 margin_left = 13.0
-margin_top = 135.0
+margin_top = 130.0
 margin_right = 110.0
-margin_bottom = 153.0
+margin_bottom = 148.0
 text = "Ranged Attack: +"
 align = 2
 valign = 1
 
 [node name="LabelRangedDamage" type="Label" parent="PanelCombat"]
 margin_left = 7.5
-margin_top = 156.5
+margin_top = 150.0
 margin_right = 110.5
-margin_bottom = 174.5
+margin_bottom = 168.0
 text = "Ranged Damage: +"
 align = 2
 valign = 1
 
 [node name="LabelSpellAttack" type="Label" parent="PanelCombat"]
 margin_left = 24.0
-margin_top = 178.0
+margin_top = 170.0
 margin_right = 111.0
-margin_bottom = 196.0
+margin_bottom = 188.0
 text = "Spell Attack: +"
 align = 2
 valign = 1
 
 [node name="LabelEquipment" type="Label" parent="PanelCombat"]
 margin_left = 88.5
-margin_top = 220.0
+margin_top = 204.0
 margin_right = 233.5
-margin_bottom = 229.0
+margin_bottom = 213.0
 text = "EQUIPMENT/CYBERNETICS"
 
 [node name="ValueHP" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 32.0
+margin_top = 30.0
 margin_right = 151.0
-margin_bottom = 51.0
+margin_bottom = 49.0
 text = "0"
 readonly = true
 
 [node name="ValueCeridium" type="TextEdit" parent="PanelCombat"]
 margin_left = 216.0
-margin_top = 32.0
+margin_top = 30.0
 margin_right = 258.0
-margin_bottom = 51.0
+margin_bottom = 49.0
 text = "0"
 readonly = true
 
 [node name="ValueAC" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 52.5
+margin_top = 50.0
 margin_right = 151.0
-margin_bottom = 71.5
+margin_bottom = 69.0
 text = "0"
 readonly = true
 
 [node name="ValueDC" type="TextEdit" parent="PanelCombat"]
 margin_left = 215.5
-margin_top = 52.0
+margin_top = 50.0
 margin_right = 257.5
-margin_bottom = 71.0
+margin_bottom = 69.0
 text = "0"
 readonly = true
 
 [node name="ValueInitiative" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 74.0
+margin_top = 70.0
 margin_right = 151.0
-margin_bottom = 93.0
+margin_bottom = 89.0
 text = "0"
 readonly = true
 
 [node name="ValueMeleeAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 94.0
+margin_top = 90.0
 margin_right = 151.0
-margin_bottom = 113.0
+margin_bottom = 109.0
 text = "0"
 readonly = true
 
 [node name="ValueMeleeDamage" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 114.0
+margin_top = 110.0
 margin_right = 151.0
-margin_bottom = 133.0
+margin_bottom = 129.0
 text = "0"
 readonly = true
 
 [node name="ValueRangedAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 135.0
+margin_top = 130.0
 margin_right = 151.0
-margin_bottom = 154.0
+margin_bottom = 149.0
 text = "0"
 readonly = true
 
 [node name="ValueRangedDamage" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 156.0
+margin_top = 150.0
 margin_right = 151.0
-margin_bottom = 175.0
+margin_bottom = 169.0
 text = "0"
 readonly = true
 
 [node name="ValueSpellAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 109.0
-margin_top = 177.5
+margin_top = 170.0
 margin_right = 151.0
-margin_bottom = 196.5
+margin_bottom = 189.0
 text = "0"
 readonly = true
 
 [node name="ButtonInitiative" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 74.0
+margin_top = 70.0
 margin_right = 214.5
-margin_bottom = 93.0
+margin_bottom = 89.0
 text = "Roll"
 
 [node name="ButtonMeleeAttack" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 94.0
+margin_top = 90.0
 margin_right = 214.5
-margin_bottom = 113.0
+margin_bottom = 109.0
 text = "Roll"
 
 [node name="ButtonMeleeDamage" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 114.5
+margin_top = 110.0
 margin_right = 214.5
-margin_bottom = 133.5
+margin_bottom = 129.0
 text = "Roll"
 
 [node name="ButtonRangedAttack" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 135.0
+margin_top = 130.0
 margin_right = 214.5
-margin_bottom = 154.0
+margin_bottom = 149.0
 text = "Roll"
 
 [node name="ButtonRangedDamage" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 156.5
+margin_top = 150.0
 margin_right = 214.5
-margin_bottom = 175.5
+margin_bottom = 169.0
 text = "Roll"
 
 [node name="ButtonSpellAttack" type="Button" parent="PanelCombat"]
 margin_left = 154.5
-margin_top = 178.0
+margin_top = 170.0
 margin_right = 214.5
-margin_bottom = 197.0
+margin_bottom = 189.0
 text = "Roll"
 
 [node name="InputStandardGear1" type="TextEdit" parent="PanelCombat"]
 margin_left = 16.0
-margin_top = 239.0
+margin_top = 223.0
 margin_right = 147.0
-margin_bottom = 321.0
-text = "	-Standard Gear-"
+margin_bottom = 305.0
+text = "	
+	-Standard Gear-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
 [node name="InputAdvancedGear" type="TextEdit" parent="PanelCombat"]
 margin_left = 163.0
-margin_top = 238.5
+margin_top = 222.5
 margin_right = 294.0
-margin_bottom = 320.5
-text = "	-Advanced Gear-"
+margin_bottom = 304.5
+text = "	
+	-Advanced Gear-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
 [node name="InputStandardFactionGear" type="TextEdit" parent="PanelCombat"]
 margin_left = 16.0
-margin_top = 329.5
+margin_top = 313.5
 margin_right = 147.0
-margin_bottom = 411.5
-text = "	-Standard Faction Gear-"
+margin_bottom = 395.5
+text = "	
+	-Standard Faction Gear-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
 [node name="InputAdvancedFactionGear" type="TextEdit" parent="PanelCombat"]
 margin_left = 163.0
-margin_top = 329.5
+margin_top = 313.5
 margin_right = 294.0
-margin_bottom = 411.5
-text = "	-Advanced Faction  Gear-"
+margin_bottom = 395.5
+text = "	
+	-Advanced Faction  Gear-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
 [node name="InputStandardCybernetics" type="TextEdit" parent="PanelCombat"]
 margin_left = 16.0
-margin_top = 421.0
+margin_top = 405.0
 margin_right = 147.0
-margin_bottom = 503.0
-text = "	-Standard Cybernetics-"
+margin_bottom = 487.0
+text = "	
+	-Standard Cybernetics-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
 [node name="InputAdvancedCybernetics" type="TextEdit" parent="PanelCombat"]
 margin_left = 163.0
-margin_top = 421.0
+margin_top = 405.0
 margin_right = 294.0
-margin_bottom = 503.0
-text = "	-Advanced Cybernetics-"
+margin_bottom = 487.0
+text = "	
+	-Advanced Cybernetics-"
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
 
-[node name="PanelFeats" type="Panel" parent="."]
+[node name="PanelArchetype" type="Panel" parent="."]
 margin_left = 1293.0
 margin_right = 1603.0
 margin_bottom = 540.0
 rect_scale = Vector2( 2, 2 )
 
-[node name="LabelFeats" type="Label" parent="PanelFeats"]
-margin_left = 136.5
+[node name="LabelArchetype" type="Label" parent="PanelArchetype"]
+margin_left = 119.5
 margin_top = 11.0
-margin_right = 178.5
+margin_right = 182.5
 margin_bottom = 20.0
-text = "FEATS"
+text = "ARCHETYPE"
 
-[node name="OptionArchetype" type="OptionButton" parent="PanelFeats"]
-margin_left = 100.5
-margin_top = 28.0
-margin_right = 201.5
-margin_bottom = 48.0
-text = "Option 0"
-items = [ "Option 0", null, false, 0, null, "Option 1", null, false, 1, null ]
+[node name="OptionArchetype" type="OptionButton" parent="PanelArchetype"]
+margin_left = 90.0
+margin_top = 32.0
+margin_right = 217.0
+margin_bottom = 54.0
+text = "Option 1"
+items = [ "Option 1", null, false, 0, null, "Option 2", null, false, 1, null ]
 selected = 0
 
-[node name="CheckFeat1" type="CheckBox" parent="PanelFeats"]
-margin_left = 18.5
-margin_top = 52.5
-margin_right = 92.5
-margin_bottom = 80.5
-text = "Feat 1"
+[node name="InputFeats" type="TextEdit" parent="PanelArchetype"]
+margin_left = 14.0
+margin_top = 74.0
+margin_right = 294.0
+margin_bottom = 160.0
+text = "	
+	-Feats-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
 
-[node name="CheckFeat2" type="CheckBox" parent="PanelFeats"]
-margin_left = 153.5
-margin_top = 52.5
-margin_right = 227.5
-margin_bottom = 80.5
-text = "Feat 2"
+[node name="InputSpells" type="TextEdit" parent="PanelArchetype"]
+margin_left = 14.0
+margin_top = 178.0
+margin_right = 294.0
+margin_bottom = 264.0
+text = "	
+	-Talents/Spells-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
 
-[node name="CheckFeat3" type="CheckBox" parent="PanelFeats"]
-margin_left = 100.5
-margin_top = 110.0
-margin_right = 174.5
-margin_bottom = 138.0
-text = "Feat 1"
+[node name="LabelDestiny" type="Label" parent="PanelArchetype"]
+margin_left = 126.0
+margin_top = 280.0
+margin_right = 189.0
+margin_bottom = 289.0
+text = "DESTINY"
 
-[node name="CheckFeat4" type="CheckBox" parent="PanelFeats"]
-margin_left = 18.5
-margin_top = 110.0
-margin_right = 92.5
-margin_bottom = 138.0
-text = "Feat 1"
+[node name="OptionDestiny" type="OptionButton" parent="PanelArchetype"]
+margin_left = 90.0
+margin_top = 300.0
+margin_right = 217.0
+margin_bottom = 322.0
+text = "Aurikar Elite"
+items = [ "Aurikar Elite", null, false, 0, null, "Chronomancer", null, false, 1, null, "Entromancer", null, false, 2, null, "Infiltrator", null, false, 3, null, "Inquisitor", null, false, 4, null, "Weapon Master", null, false, 5, null ]
+selected = 0
 
-[node name="CheckFeat5" type="CheckBox" parent="PanelFeats"]
-margin_left = 201.5
-margin_top = 112.0
-margin_right = 275.5
-margin_bottom = 140.0
-text = "Feat 1"
+[node name="LabelFactionPoints" type="Label" parent="PanelArchetype"]
+margin_left = 107.5
+margin_top = 340.0
+margin_right = 197.5
+margin_bottom = 349.0
+text = "FACTION POINTS"
+
+[node name="LabelAurichome" type="Label" parent="PanelArchetype"]
+margin_left = 80.5
+margin_top = 362.5
+margin_right = 143.5
+margin_bottom = 382.5
+text = "Aurichome:"
+align = 2
+valign = 1
+
+[node name="SpinBoxAurichome" type="SpinBox" parent="PanelArchetype"]
+margin_left = 157.5
+margin_top = 362.5
+margin_right = 217.5
+margin_bottom = 382.5
+min_value = -10.0
+max_value = 20.0
+
+[node name="LabelNIGHT" type="Label" parent="PanelArchetype"]
+margin_left = 80.5
+margin_top = 390.5
+margin_right = 143.5
+margin_bottom = 410.5
+text = "NIGHT:"
+align = 2
+valign = 1
+
+[node name="SpinBoxNIGHT" type="SpinBox" parent="PanelArchetype"]
+margin_left = 157.5
+margin_top = 390.5
+margin_right = 217.5
+margin_bottom = 410.5
+min_value = -10.0
+max_value = 20.0
+
+[node name="LabelUnaligned" type="Label" parent="PanelArchetype"]
+margin_left = 80.5
+margin_top = 420.0
+margin_right = 143.5
+margin_bottom = 440.0
+text = "Unaligned:"
+align = 2
+valign = 1
+
+[node name="SpinBoxUnaligned" type="SpinBox" parent="PanelArchetype"]
+margin_left = 157.5
+margin_top = 420.0
+margin_right = 217.5
+margin_bottom = 440.0
+min_value = -10.0
+max_value = 20.0
