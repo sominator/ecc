@@ -1,0 +1,9 @@
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\bin\Debug\ECC.dll
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\bin\Debug\ECC.pdb
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.csproj.AssemblyReference.cache
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.AssemblyInfoInputs.cache
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.AssemblyInfo.cs
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.csproj.CoreCompileInputs.cache
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.dll
+C:\Users\Som\coding\Godot\3.5\ECC\.mono\temp\obj\Debug\ECC.pdb

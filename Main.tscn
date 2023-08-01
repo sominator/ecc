@@ -1,7 +1,9 @@
-[gd_scene load_steps=96 format=2]
+[gd_scene load_steps=98 format=2]
 
 [ext_resource path="res://theme/Pixel Square 10.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://theme/sci-fi.png" type="Texture" id=2]
+[ext_resource path="res://OptionClass.cs" type="Script" id=3]
+[ext_resource path="res://CharacterManager.cs" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=92]
 size = 10
@@ -870,6 +872,10 @@ VSlider/styles/slider = SubResource( 91 )
 
 [node name="Main" type="Node2D"]
 
+[node name="CharacterManager" type="Node" parent="."]
+script = ExtResource( 4 )
+_valStrengthPath = NodePath("../PanelAbilities/ValueStrength")
+
 [node name="PanelInfo" type="Panel" parent="."]
 margin_left = 4.0
 margin_right = 314.0
@@ -903,6 +909,7 @@ margin_bottom = 93.5
 text = "Auromancer"
 items = [ "Auromancer", null, false, 0, null, "NIGHT Agent", null, false, 1, null, "Revolutionary", null, false, 2, null, "Technomancer", null, false, 3, null, "Terramancer", null, false, 4, null, "Vanguard", null, false, 5, null ]
 selected = 0
+script = ExtResource( 3 )
 
 [node name="SpinBoxAge" type="SpinBox" parent="PanelInfo"]
 margin_left = 58.0
@@ -1825,3 +1832,5 @@ margin_right = 217.5
 margin_bottom = 440.0
 min_value = -10.0
 max_value = 20.0
+
+[connection signal="item_selected" from="PanelInfo/OptionClass" to="PanelInfo/OptionClass" method="OnOptionClassItemSelected"]
