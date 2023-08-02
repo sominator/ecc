@@ -874,7 +874,6 @@ VSlider/styles/slider = SubResource( 91 )
 
 [node name="CharacterManager" type="Node" parent="."]
 script = ExtResource( 4 )
-_valStrengthPath = NodePath("../PanelAbilities/ValueStrength")
 
 [node name="PanelInfo" type="Panel" parent="."]
 margin_left = 4.0
@@ -982,12 +981,12 @@ text = "Will: +"
 align = 2
 valign = 1
 
-[node name="LabelCharisma" type="Label" parent="PanelAbilities"]
-margin_left = 28.0
+[node name="LabelPersonality" type="Label" parent="PanelAbilities"]
+margin_left = 14.5
 margin_top = 85.0
-margin_right = 94.0
+margin_right = 93.5
 margin_bottom = 103.0
-text = "Charisma: +"
+text = "Personality: +"
 valign = 1
 
 [node name="LabelSkills" type="Label" parent="PanelAbilities"]
@@ -1156,7 +1155,7 @@ margin_bottom = 84.0
 text = "0"
 readonly = true
 
-[node name="ValueCharisma" type="TextEdit" parent="PanelAbilities"]
+[node name="ValuePersonality" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
 margin_top = 85.0
 margin_right = 135.0
@@ -1305,7 +1304,7 @@ margin_right = 198.5
 margin_bottom = 84.0
 text = "Roll"
 
-[node name="ButtonCharisma" type="Button" parent="PanelAbilities"]
+[node name="ButtonPersonality" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
 margin_top = 85.0
 margin_right = 198.5
