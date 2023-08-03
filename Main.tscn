@@ -1430,90 +1430,126 @@ margin_bottom = 20.0
 text = "COMBAT"
 
 [node name="LabelHP" type="Label" parent="PanelCombat"]
-margin_left = 44.5
+margin_left = 29.5
 margin_top = 30.0
-margin_right = 109.5
+margin_right = 94.5
 margin_bottom = 50.0
 text = "HP: "
 align = 2
 valign = 1
 
 [node name="LabelCeridium" type="Label" parent="PanelCombat"]
-margin_left = 151.0
+margin_left = 140.0
 margin_top = 30.0
-margin_right = 217.0
+margin_right = 206.0
 margin_bottom = 48.0
 text = "Ceridium: "
 align = 2
 valign = 1
 
 [node name="LabelAC" type="Label" parent="PanelCombat"]
-margin_left = 25.0
+margin_left = 10.5
 margin_top = 50.0
-margin_right = 110.0
+margin_right = 95.5
 margin_bottom = 68.0
 text = "Armor Class: "
 align = 2
 valign = 1
 
 [node name="LabelSpellDC" type="Label" parent="PanelCombat"]
-margin_left = 152.0
+margin_left = 141.0
 margin_top = 50.0
-margin_right = 216.0
+margin_right = 205.0
 margin_bottom = 68.0
 text = "Spell DC: "
 align = 2
 valign = 1
 
 [node name="LabelInitiative" type="Label" parent="PanelCombat"]
-margin_left = 43.0
+margin_left = 26.5
 margin_top = 70.0
-margin_right = 110.0
+margin_right = 93.5
 margin_bottom = 88.0
 text = "Initiative: +"
 align = 2
 valign = 1
 
 [node name="LabelMeleeAttack" type="Label" parent="PanelCombat"]
-margin_left = 24.0
+margin_left = 7.5
 margin_top = 90.0
-margin_right = 110.0
+margin_right = 93.5
 margin_bottom = 108.0
 text = "Melee Attack: +"
 align = 2
 valign = 1
 
 [node name="LabelMeleeDamage" type="Label" parent="PanelCombat"]
-margin_left = 18.0
+margin_left = 6.0
 margin_top = 110.0
-margin_right = 110.0
+margin_right = 40.0
 margin_bottom = 128.0
-text = "Melee Damage: +"
+text = " Dmg: "
+align = 2
+valign = 1
+
+[node name="LabelMeleeDamageD" type="Label" parent="PanelCombat"]
+margin_left = 86.0
+margin_top = 110.0
+margin_right = 93.0
+margin_bottom = 128.0
+text = "d"
+align = 2
+valign = 1
+
+[node name="LabelMeleeDamagePlus" type="Label" parent="PanelCombat"]
+margin_left = 147.0
+margin_top = 110.0
+margin_right = 154.0
+margin_bottom = 128.0
+text = "+"
 align = 2
 valign = 1
 
 [node name="LabelRangedAttack" type="Label" parent="PanelCombat"]
-margin_left = 13.0
+margin_left = 6.0
 margin_top = 130.0
-margin_right = 110.0
+margin_right = 94.0
 margin_bottom = 148.0
-text = "Ranged Attack: +"
+text = "Ranged Atk: +"
 align = 2
 valign = 1
 
 [node name="LabelRangedDamage" type="Label" parent="PanelCombat"]
-margin_left = 7.5
+margin_left = 6.0
 margin_top = 150.0
-margin_right = 110.5
+margin_right = 42.0
 margin_bottom = 168.0
-text = "Ranged Damage: +"
+text = " Dmg:  "
+align = 2
+valign = 1
+
+[node name="LabelRangedDamageD" type="Label" parent="PanelCombat"]
+margin_left = 86.0
+margin_top = 150.0
+margin_right = 93.0
+margin_bottom = 168.0
+text = "d"
+align = 2
+valign = 1
+
+[node name="LabelRangedDamagePlus" type="Label" parent="PanelCombat"]
+margin_left = 147.0
+margin_top = 150.0
+margin_right = 154.0
+margin_bottom = 168.0
+text = "+"
 align = 2
 valign = 1
 
 [node name="LabelSpellAttack" type="Label" parent="PanelCombat"]
-margin_left = 24.0
+margin_left = 7.0
 margin_top = 170.0
-margin_right = 111.0
+margin_right = 94.0
 margin_bottom = 188.0
 text = "Spell Attack: +"
 align = 2
@@ -1527,124 +1563,154 @@ margin_bottom = 213.0
 text = "EQUIPMENT/CYBERNETICS"
 
 [node name="ValueHP" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 30.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 49.0
 text = "0"
-readonly = true
 
 [node name="ValueCeridium" type="TextEdit" parent="PanelCombat"]
-margin_left = 216.0
+margin_left = 205.0
 margin_top = 30.0
-margin_right = 258.0
+margin_right = 255.0
 margin_bottom = 49.0
 text = "0"
-readonly = true
 
 [node name="ValueAC" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 50.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 69.0
 text = "0"
 readonly = true
 
 [node name="ValueDC" type="TextEdit" parent="PanelCombat"]
-margin_left = 215.5
+margin_left = 204.5
 margin_top = 50.0
-margin_right = 257.5
+margin_right = 254.5
 margin_bottom = 69.0
 text = "0"
 readonly = true
 
 [node name="ValueInitiative" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 70.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 89.0
 text = "0"
 readonly = true
 
 [node name="ValueMeleeAttack" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 90.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 109.0
 text = "0"
 readonly = true
 
-[node name="ValueMeleeDamage" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+[node name="ValueMeleeDamageNumber" type="TextEdit" parent="PanelCombat"]
+margin_left = 40.0
 margin_top = 110.0
-margin_right = 151.0
+margin_right = 82.0
+margin_bottom = 129.0
+text = "0"
+readonly = true
+
+[node name="ValueMeleeDamageType" type="TextEdit" parent="PanelCombat"]
+margin_left = 95.0
+margin_top = 110.0
+margin_right = 145.0
+margin_bottom = 130.0
+text = "0"
+readonly = true
+
+[node name="ValueMeleeDamageMod" type="TextEdit" parent="PanelCombat"]
+margin_left = 154.0
+margin_top = 110.0
+margin_right = 196.0
 margin_bottom = 129.0
 text = "0"
 readonly = true
 
 [node name="ValueRangedAttack" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 130.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 149.0
 text = "0"
 readonly = true
 
-[node name="ValueRangedDamage" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+[node name="ValueRangedDamageNumber" type="TextEdit" parent="PanelCombat"]
+margin_left = 40.0
 margin_top = 150.0
-margin_right = 151.0
+margin_right = 82.0
+margin_bottom = 169.0
+text = "0"
+readonly = true
+
+[node name="ValueRangedDamageType" type="TextEdit" parent="PanelCombat"]
+margin_left = 95.0
+margin_top = 150.0
+margin_right = 145.0
+margin_bottom = 169.0
+text = "0"
+readonly = true
+
+[node name="ValueRangedDamageMod" type="TextEdit" parent="PanelCombat"]
+margin_left = 154.0
+margin_top = 150.0
+margin_right = 196.0
 margin_bottom = 169.0
 text = "0"
 readonly = true
 
 [node name="ValueSpellAttack" type="TextEdit" parent="PanelCombat"]
-margin_left = 109.0
+margin_left = 95.0
 margin_top = 170.0
-margin_right = 151.0
+margin_right = 145.0
 margin_bottom = 189.0
 text = "0"
 readonly = true
 
 [node name="ButtonInitiative" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 70.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 89.0
 text = "Roll"
 
 [node name="ButtonMeleeAttack" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 90.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 109.0
 text = "Roll"
 
 [node name="ButtonMeleeDamage" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 110.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 129.0
 text = "Roll"
 
 [node name="ButtonRangedAttack" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 130.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 149.0
 text = "Roll"
 
 [node name="ButtonRangedDamage" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 150.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 169.0
 text = "Roll"
 
 [node name="ButtonSpellAttack" type="Button" parent="PanelCombat"]
-margin_left = 154.5
+margin_left = 200.0
 margin_top = 170.0
-margin_right = 214.5
+margin_right = 260.0
 margin_bottom = 189.0
 text = "Roll"
 

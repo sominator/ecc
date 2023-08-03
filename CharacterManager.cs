@@ -35,9 +35,13 @@ public class CharacterManager : Node
 	TextEdit valueDC;
 	TextEdit valueInitiative;
 	TextEdit valueMeleeAttack;
-	TextEdit valueMeleeDamage;
+	TextEdit valueMeleeDamageNumber;
+	TextEdit valueMeleeDamageType;
+	TextEdit valueMeleeDamageMod;
 	TextEdit valueRangedAttack;
-	TextEdit valueRangedDamage;
+	TextEdit valueRangedDamageNumber;
+	TextEdit valueRangedDamageType;
+	TextEdit valueRangedDamageMod;
 	TextEdit valueSpellAttack;
 
 	public override void _Ready()
@@ -83,9 +87,13 @@ public class CharacterManager : Node
 		valueDC = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueDC");
 		valueInitiative = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueInitiative");
 		valueMeleeAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueMeleeAttack");
-		valueMeleeDamage = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueMeleeDamage");
+		valueMeleeDamageNumber = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueMeleeDamageNumber");
+		valueMeleeDamageType = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueMeleeDamageType");
+		valueMeleeDamageMod = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueMeleeDamageMod");
 		valueRangedAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedAttack");
-		valueRangedDamage = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamage");
+		valueRangedDamageNumber = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageNumber");
+		valueRangedDamageType = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageType");
+		valueRangedDamageMod = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageMod");
 		valueSpellAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueSpellAttack");
 	}
 
@@ -143,9 +151,13 @@ public class CharacterManager : Node
 		valueDC.Text = selectedClassData["dc"].ToString();
 		valueInitiative.Text = selectedClassData["initiative"].ToString();
 		valueMeleeAttack.Text = selectedClassData["meleeAttack"].ToString();
-		valueMeleeDamage.Text = selectedClassData["meleeDamageMod"].ToString();
+		valueMeleeDamageNumber.Text = selectedClassData["meleeDamageNumber"].ToString();
+		valueMeleeDamageType.Text = selectedClassData["meleeDamageType"].ToString();
+		valueMeleeDamageMod.Text = selectedClassData["meleeDamageMod"].ToString();
 		valueRangedAttack.Text = selectedClassData["rangedAttack"].ToString();
-		valueRangedDamage.Text = selectedClassData["rangedDamageMod"].ToString();
+		valueRangedDamageNumber.Text = selectedClassData["rangedDamageNumber"].ToString();
+		valueRangedDamageType.Text = selectedClassData["rangedDamageType"].ToString();
+		valueRangedDamageMod.Text = selectedClassData["rangedDamageMod"].ToString();
 		valueSpellAttack.Text = selectedClassData["spellAttack"].ToString();
 	}
 }
