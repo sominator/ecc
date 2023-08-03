@@ -5,9 +5,6 @@ using System.Collections.Generic;
 
 public class CharacterManager : Node
 {
-	//[Export]
-	//private NodePath _valStrengthPath;
-
 	Dictionary<string, int> selectedClassData;
 
 	TextEdit valueStrength;
@@ -44,11 +41,10 @@ public class CharacterManager : Node
 	TextEdit valueRangedDamageMod;
 	TextEdit valueSpellAttack;
 
+	OptionButton optionArchetype;
+
 	public override void _Ready()
 	{
-		//TextEdit valStrength = GetNode<Godot.TextEdit>(_valStrengthPath);
-		//valStrength.Text = "1";
-
 		GetNodes();
 		UpdateSelectedClass("Auromancer");
 		UpdateClassData();
@@ -95,6 +91,8 @@ public class CharacterManager : Node
 		valueRangedDamageType = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageType");
 		valueRangedDamageMod = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageMod");
 		valueSpellAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueSpellAttack");
+
+		optionArchetype = GetNode<Godot.OptionButton>("/root/Main/PanelArchetype/OptionArchetype");
 	}
 
 	void UpdateSelectedClass(string classChoice)
@@ -103,24 +101,38 @@ public class CharacterManager : Node
 		{
 			case "Auromancer":
 				selectedClassData = CharacterData.AuromancerData;
+				optionArchetype.SetItemText(0, "Bladesinger");
+				optionArchetype.SetItemText(1, "Siren");
 				break;
 			case "NightAgent":
 				selectedClassData = CharacterData.NightAgentData;
+				optionArchetype.SetItemText(0, "Nightpath");
+				optionArchetype.SetItemText(1, "Daypath");
 				break;
 			case "Revolutionary":
 				selectedClassData = CharacterData.RevolutionaryData;
+				optionArchetype.SetItemText(0, "Gunslinger");
+				optionArchetype.SetItemText(1, "Sharpshooter");
 				break;
 			case "Technomancer":
 				selectedClassData = CharacterData.TechnomancerData;
+				optionArchetype.SetItemText(0, "Combat Engineer");
+				optionArchetype.SetItemText(1, "Net Specialist");
 				break;
 			case "Terramancer":
 				selectedClassData = CharacterData.TerramancerData;
+				optionArchetype.SetItemText(0, "Arcane Pitcher");
+				optionArchetype.SetItemText(1, "Nature's Harbinger");
 				break;
 			case "Vanguard":
 				selectedClassData = CharacterData.VanguardData;
+				optionArchetype.SetItemText(0, "Assassin");
+				optionArchetype.SetItemText(1, "Shadowstalker");
 				break;
 			default:
 				selectedClassData = CharacterData.AuromancerData;
+				optionArchetype.SetItemText(0, "Bladesinger");
+				optionArchetype.SetItemText(1, "Siren");
 				break;
 		}
 	}

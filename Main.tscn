@@ -1,9 +1,11 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=100 format=2]
 
 [ext_resource path="res://theme/Pixel Square 10.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://theme/sci-fi.png" type="Texture" id=2]
 [ext_resource path="res://OptionClass.cs" type="Script" id=3]
 [ext_resource path="res://CharacterManager.cs" type="Script" id=4]
+[ext_resource path="res://ButtonRoll.cs" type="Script" id=5]
+[ext_resource path="res://ButtonRollEx.cs" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=92]
 size = 10
@@ -1137,7 +1139,6 @@ margin_top = 25.0
 margin_right = 135.0
 margin_bottom = 44.0
 text = "0"
-readonly = true
 
 [node name="ValueAgility" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1145,7 +1146,6 @@ margin_top = 45.0
 margin_right = 135.0
 margin_bottom = 64.0
 text = "0"
-readonly = true
 
 [node name="ValueWill" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1153,7 +1153,6 @@ margin_top = 65.0
 margin_right = 135.0
 margin_bottom = 84.0
 text = "0"
-readonly = true
 
 [node name="ValuePersonality" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1161,7 +1160,6 @@ margin_top = 85.0
 margin_right = 135.0
 margin_bottom = 104.0
 text = "0"
-readonly = true
 
 [node name="ValueAthletics" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1169,7 +1167,6 @@ margin_top = 125.0
 margin_right = 135.0
 margin_bottom = 144.0
 text = "0"
-readonly = true
 
 [node name="ValueAwareness" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1177,7 +1174,6 @@ margin_top = 145.0
 margin_right = 135.0
 margin_bottom = 164.0
 text = "0"
-readonly = true
 
 [node name="ValueDiscernment" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1185,7 +1181,6 @@ margin_top = 165.0
 margin_right = 135.0
 margin_bottom = 184.0
 text = "0"
-readonly = true
 
 [node name="ValueDrama" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1193,7 +1188,6 @@ margin_top = 185.0
 margin_right = 135.0
 margin_bottom = 204.0
 text = "0"
-readonly = true
 
 [node name="ValueGrappling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1201,7 +1195,6 @@ margin_top = 205.0
 margin_right = 135.0
 margin_bottom = 224.0
 text = "0"
-readonly = true
 
 [node name="ValueHacking" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1209,7 +1202,6 @@ margin_top = 225.0
 margin_right = 135.0
 margin_bottom = 244.0
 text = "0"
-readonly = true
 
 [node name="ValueHealing" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1217,7 +1209,6 @@ margin_top = 245.0
 margin_right = 135.0
 margin_bottom = 264.0
 text = "0"
-readonly = true
 
 [node name="ValueKnowledge" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1225,7 +1216,6 @@ margin_top = 265.0
 margin_right = 135.0
 margin_bottom = 284.0
 text = "0"
-readonly = true
 
 [node name="ValueMancy" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1233,7 +1223,6 @@ margin_top = 285.0
 margin_right = 135.0
 margin_bottom = 304.0
 text = "0"
-readonly = true
 
 [node name="ValueNature" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1241,7 +1230,6 @@ margin_top = 305.0
 margin_right = 135.0
 margin_bottom = 324.0
 text = "0"
-readonly = true
 
 [node name="ValueNegotiation" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1249,7 +1237,6 @@ margin_top = 325.0
 margin_right = 135.0
 margin_bottom = 344.0
 text = "0"
-readonly = true
 
 [node name="ValueStealth" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1257,7 +1244,6 @@ margin_top = 345.0
 margin_right = 135.0
 margin_bottom = 364.0
 text = "0"
-readonly = true
 
 [node name="ValueThievery" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1265,7 +1251,6 @@ margin_top = 365.0
 margin_right = 135.0
 margin_bottom = 384.0
 text = "0"
-readonly = true
 
 [node name="ValueTumbling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1273,7 +1258,6 @@ margin_top = 385.0
 margin_right = 135.0
 margin_bottom = 404.0
 text = "0"
-readonly = true
 
 [node name="ValueVehicles" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1281,7 +1265,6 @@ margin_top = 405.0
 margin_right = 135.0
 margin_bottom = 424.0
 text = "0"
-readonly = true
 
 [node name="ButtonStrength" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1289,6 +1272,9 @@ margin_top = 25.0
 margin_right = 198.5
 margin_bottom = 44.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueStrength")
+_outputPath = NodePath("../LabelStrengthOutput")
 
 [node name="ButtonAgility" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1296,6 +1282,9 @@ margin_top = 45.0
 margin_right = 198.5
 margin_bottom = 64.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueAgility")
+_outputPath = NodePath("../LabelAgilityOutput")
 
 [node name="ButtonWill" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1303,6 +1292,9 @@ margin_top = 65.0
 margin_right = 198.5
 margin_bottom = 84.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueWill")
+_outputPath = NodePath("../LabelWillOutput")
 
 [node name="ButtonPersonality" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1310,6 +1302,9 @@ margin_top = 85.0
 margin_right = 198.5
 margin_bottom = 104.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValuePersonality")
+_outputPath = NodePath("../LabelPersonalityOutput")
 
 [node name="ButtonAthletics" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1317,6 +1312,9 @@ margin_top = 125.0
 margin_right = 198.5
 margin_bottom = 144.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueAthletics")
+_outputPath = NodePath("../LabelAthleticsOutput")
 
 [node name="ButtonAwareness" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1324,6 +1322,9 @@ margin_top = 145.0
 margin_right = 198.5
 margin_bottom = 164.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueAwareness")
+_outputPath = NodePath("../LabelAwarenessOutput")
 
 [node name="ButtonDiscernment" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1331,6 +1332,9 @@ margin_top = 165.0
 margin_right = 198.5
 margin_bottom = 184.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueDiscernment")
+_outputPath = NodePath("../LabelDiscernmentOutput")
 
 [node name="ButtonDrama" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1338,6 +1342,9 @@ margin_top = 185.0
 margin_right = 198.5
 margin_bottom = 204.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueDrama")
+_outputPath = NodePath("../LabelDramaOutput")
 
 [node name="ButtonGrappling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1345,6 +1352,9 @@ margin_top = 205.0
 margin_right = 198.5
 margin_bottom = 224.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueGrappling")
+_outputPath = NodePath("../LabelGrapplingOutput")
 
 [node name="ButtonHacking" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1352,6 +1362,9 @@ margin_top = 225.0
 margin_right = 198.5
 margin_bottom = 244.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueHacking")
+_outputPath = NodePath("../LabelHackingOutput")
 
 [node name="ButtonHealing" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1359,6 +1372,9 @@ margin_top = 245.0
 margin_right = 198.5
 margin_bottom = 264.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueHealing")
+_outputPath = NodePath("../LabelHealingOutput")
 
 [node name="ButtonKnowledge" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1366,6 +1382,9 @@ margin_top = 265.0
 margin_right = 198.5
 margin_bottom = 284.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueKnowledge")
+_outputPath = NodePath("../LabelKnowledgeOutput")
 
 [node name="ButtonMancy" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1373,6 +1392,9 @@ margin_top = 285.0
 margin_right = 198.5
 margin_bottom = 304.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueMancy")
+_outputPath = NodePath("../LabelMancyOutput")
 
 [node name="ButtonNature" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1380,6 +1402,9 @@ margin_top = 305.0
 margin_right = 198.5
 margin_bottom = 324.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueNature")
+_outputPath = NodePath("../LabelNatureOutput")
 
 [node name="ButtonNegotiation" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1387,6 +1412,9 @@ margin_top = 325.0
 margin_right = 198.5
 margin_bottom = 344.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueNegotiation")
+_outputPath = NodePath("../LabelNegotiationOutput")
 
 [node name="ButtonStealth" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1394,6 +1422,9 @@ margin_top = 345.0
 margin_right = 198.5
 margin_bottom = 364.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueStealth")
+_outputPath = NodePath("../LabelStealthOutput")
 
 [node name="ButtonThievery" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1401,6 +1432,9 @@ margin_top = 365.0
 margin_right = 198.5
 margin_bottom = 384.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueThievery")
+_outputPath = NodePath("../LabelThieveryOutput")
 
 [node name="ButtonTumbling" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1408,6 +1442,9 @@ margin_top = 385.0
 margin_right = 198.5
 margin_bottom = 404.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueTumbling")
+_outputPath = NodePath("../LabelTumblingOutput")
 
 [node name="ButtonVehicles" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1415,6 +1452,180 @@ margin_top = 405.0
 margin_right = 198.5
 margin_bottom = 424.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueVehicles")
+_outputPath = NodePath("../LabelVehiclesOutput")
+
+[node name="LabelStrengthOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 25.0
+margin_right = 280.5
+margin_bottom = 43.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelAgilityOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 45.0
+margin_right = 280.5
+margin_bottom = 63.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelWillOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 65.0
+margin_right = 280.5
+margin_bottom = 83.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelPersonalityOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 85.0
+margin_right = 280.5
+margin_bottom = 103.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelAthleticsOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 125.0
+margin_right = 280.5
+margin_bottom = 143.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelAwarenessOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 145.0
+margin_right = 280.5
+margin_bottom = 163.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelDiscernmentOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 165.0
+margin_right = 280.5
+margin_bottom = 183.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelDramaOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 185.0
+margin_right = 280.5
+margin_bottom = 203.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelGrapplingOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 205.0
+margin_right = 280.5
+margin_bottom = 223.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelHackingOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 225.0
+margin_right = 280.5
+margin_bottom = 243.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelHealingOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 245.0
+margin_right = 280.5
+margin_bottom = 263.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelKnowledgeOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 265.0
+margin_right = 280.5
+margin_bottom = 283.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelMancyOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 285.0
+margin_right = 280.5
+margin_bottom = 303.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelNatureOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 305.0
+margin_right = 280.5
+margin_bottom = 323.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelNegotiationOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 325.0
+margin_right = 280.5
+margin_bottom = 343.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelStealthOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 345.0
+margin_right = 280.5
+margin_bottom = 363.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelThieveryOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 365.0
+margin_right = 280.5
+margin_bottom = 383.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelTumblingOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 385.0
+margin_right = 280.5
+margin_bottom = 403.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelVehiclesOutput" type="Label" parent="PanelAbilities"]
+margin_left = 232.5
+margin_top = 405.0
+margin_right = 280.5
+margin_bottom = 423.0
+text = "0"
+align = 1
+valign = 1
 
 [node name="PanelCombat" type="Panel" parent="."]
 margin_left = 648.0
@@ -1582,7 +1793,6 @@ margin_top = 50.0
 margin_right = 145.0
 margin_bottom = 69.0
 text = "0"
-readonly = true
 
 [node name="ValueDC" type="TextEdit" parent="PanelCombat"]
 margin_left = 204.5
@@ -1590,7 +1800,6 @@ margin_top = 50.0
 margin_right = 254.5
 margin_bottom = 69.0
 text = "0"
-readonly = true
 
 [node name="ValueInitiative" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1598,7 +1807,6 @@ margin_top = 70.0
 margin_right = 145.0
 margin_bottom = 89.0
 text = "0"
-readonly = true
 
 [node name="ValueMeleeAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1606,7 +1814,6 @@ margin_top = 90.0
 margin_right = 145.0
 margin_bottom = 109.0
 text = "0"
-readonly = true
 
 [node name="ValueMeleeDamageNumber" type="TextEdit" parent="PanelCombat"]
 margin_left = 40.0
@@ -1614,7 +1821,6 @@ margin_top = 110.0
 margin_right = 82.0
 margin_bottom = 129.0
 text = "0"
-readonly = true
 
 [node name="ValueMeleeDamageType" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1622,7 +1828,6 @@ margin_top = 110.0
 margin_right = 145.0
 margin_bottom = 130.0
 text = "0"
-readonly = true
 
 [node name="ValueMeleeDamageMod" type="TextEdit" parent="PanelCombat"]
 margin_left = 154.0
@@ -1630,7 +1835,6 @@ margin_top = 110.0
 margin_right = 196.0
 margin_bottom = 129.0
 text = "0"
-readonly = true
 
 [node name="ValueRangedAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1638,7 +1842,6 @@ margin_top = 130.0
 margin_right = 145.0
 margin_bottom = 149.0
 text = "0"
-readonly = true
 
 [node name="ValueRangedDamageNumber" type="TextEdit" parent="PanelCombat"]
 margin_left = 40.0
@@ -1646,7 +1849,6 @@ margin_top = 150.0
 margin_right = 82.0
 margin_bottom = 169.0
 text = "0"
-readonly = true
 
 [node name="ValueRangedDamageType" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1654,7 +1856,6 @@ margin_top = 150.0
 margin_right = 145.0
 margin_bottom = 169.0
 text = "0"
-readonly = true
 
 [node name="ValueRangedDamageMod" type="TextEdit" parent="PanelCombat"]
 margin_left = 154.0
@@ -1662,7 +1863,6 @@ margin_top = 150.0
 margin_right = 196.0
 margin_bottom = 169.0
 text = "0"
-readonly = true
 
 [node name="ValueSpellAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1670,7 +1870,6 @@ margin_top = 170.0
 margin_right = 145.0
 margin_bottom = 189.0
 text = "0"
-readonly = true
 
 [node name="ButtonInitiative" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1678,6 +1877,9 @@ margin_top = 70.0
 margin_right = 260.0
 margin_bottom = 89.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueInitiative")
+_outputPath = NodePath("../LabelInitiativeOutput")
 
 [node name="ButtonMeleeAttack" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1685,6 +1887,9 @@ margin_top = 90.0
 margin_right = 260.0
 margin_bottom = 109.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueMeleeAttack")
+_outputPath = NodePath("../LabelMeleeAttackOutput")
 
 [node name="ButtonMeleeDamage" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1692,6 +1897,11 @@ margin_top = 110.0
 margin_right = 260.0
 margin_bottom = 129.0
 text = "Roll"
+script = ExtResource( 6 )
+_numberPath = NodePath("../ValueMeleeDamageNumber")
+_typePath = NodePath("../ValueMeleeDamageType")
+_modPath = NodePath("../ValueMeleeDamageMod")
+_outputPath = NodePath("../LabelMeleeDamageOutput")
 
 [node name="ButtonRangedAttack" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1699,6 +1909,9 @@ margin_top = 130.0
 margin_right = 260.0
 margin_bottom = 149.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueRangedAttack")
+_outputPath = NodePath("../LabelRangedAttackOutput")
 
 [node name="ButtonRangedDamage" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1706,6 +1919,11 @@ margin_top = 150.0
 margin_right = 260.0
 margin_bottom = 169.0
 text = "Roll"
+script = ExtResource( 6 )
+_numberPath = NodePath("../ValueRangedDamageNumber")
+_typePath = NodePath("../ValueRangedDamageType")
+_modPath = NodePath("../ValueRangedDamageMod")
+_outputPath = NodePath("../LabelRangedDamageOutput")
 
 [node name="ButtonSpellAttack" type="Button" parent="PanelCombat"]
 margin_left = 200.0
@@ -1713,8 +1931,65 @@ margin_top = 170.0
 margin_right = 260.0
 margin_bottom = 189.0
 text = "Roll"
+script = ExtResource( 5 )
+_valuePath = NodePath("../ValueSpellAttack")
+_outputPath = NodePath("../LabelSpellAttackOutput")
 
-[node name="InputStandardGear1" type="TextEdit" parent="PanelCombat"]
+[node name="LabelInitiativeOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 70.0
+margin_right = 306.5
+margin_bottom = 88.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelMeleeAttackOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 90.0
+margin_right = 306.5
+margin_bottom = 108.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelMeleeDamageOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 110.0
+margin_right = 306.5
+margin_bottom = 128.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelRangedAttackOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 130.0
+margin_right = 306.5
+margin_bottom = 148.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelRangedDamageOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 150.0
+margin_right = 306.5
+margin_bottom = 168.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="LabelSpellAttackOutput" type="Label" parent="PanelCombat"]
+margin_left = 258.5
+margin_top = 170.0
+margin_right = 306.5
+margin_bottom = 188.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="InputStandardGear" type="TextEdit" parent="PanelCombat"]
 margin_left = 16.0
 margin_top = 223.0
 margin_right = 147.0
@@ -1779,6 +2054,23 @@ text = "
 wrap_enabled = true
 caret_block_mode = true
 caret_blink = true
+
+[node name="LabelNP" type="Label" parent="PanelCombat"]
+margin_left = 6.0
+margin_top = 494.5
+margin_right = 307.0
+margin_bottom = 515.5
+text = "Download free ENTROMANCY content 
+and more  at nightpathpub.com"
+align = 1
+
+[node name="LabelAttribution" type="Label" parent="PanelCombat"]
+margin_left = 51.5
+margin_top = 523.5
+margin_right = 401.5
+margin_bottom = 532.5
+rect_scale = Vector2( 0.6, 0.6 )
+text = "Theme adapted from azagaya's Pixel Art Sci Fi Theme (c) 2021"
 
 [node name="PanelArchetype" type="Panel" parent="."]
 margin_left = 1293.0
@@ -1898,5 +2190,84 @@ margin_bottom = 440.0
 min_value = -10.0
 max_value = 20.0
 
+[node name="LabelMomentum" type="Label" parent="PanelArchetype"]
+margin_left = 14.0
+margin_top = 468.0
+margin_right = 77.0
+margin_bottom = 488.0
+text = "Momentum:"
+align = 2
+valign = 1
+
+[node name="SpinBoxMomentum" type="SpinBox" parent="PanelArchetype"]
+margin_left = 80.5
+margin_top = 468.0
+margin_right = 140.5
+margin_bottom = 488.0
+max_value = 10.0
+
+[node name="InputNotes" type="TextEdit" parent="PanelArchetype"]
+margin_left = 154.0
+margin_top = 451.0
+margin_right = 295.0
+margin_bottom = 505.0
+text = "	
+	-Notes-"
+wrap_enabled = true
+caret_block_mode = true
+caret_blink = true
+
+[node name="LabelLightMode" type="Label" parent="PanelArchetype"]
+margin_left = 92.0
+margin_top = 512.0
+margin_right = 155.0
+margin_bottom = 532.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "Light Mode"
+align = 2
+valign = 1
+
+[node name="LabelDarkMode" type="Label" parent="PanelArchetype"]
+margin_left = 164.5
+margin_top = 512.0
+margin_right = 227.5
+margin_bottom = 532.0
+rect_scale = Vector2( 0.75, 0.75 )
+text = "Dark Mode"
+align = 2
+valign = 1
+
+[node name="CheckButton" type="CheckButton" parent="PanelArchetype"]
+margin_left = 143.5
+margin_top = 512.5
+margin_right = 157.5
+margin_bottom = 521.5
+rect_scale = Vector2( 1.5, 1.5 )
+
 [connection signal="ClassChosen" from="PanelInfo/OptionClass" to="CharacterManager" method="OnClassChosen"]
 [connection signal="item_selected" from="PanelInfo/OptionClass" to="PanelInfo/OptionClass" method="OnOptionClassItemSelected"]
+[connection signal="button_down" from="PanelAbilities/ButtonStrength" to="PanelAbilities/ButtonStrength" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonAgility" to="PanelAbilities/ButtonAgility" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonWill" to="PanelAbilities/ButtonWill" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonPersonality" to="PanelAbilities/ButtonPersonality" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonAthletics" to="PanelAbilities/ButtonAthletics" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonAwareness" to="PanelAbilities/ButtonAwareness" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonDiscernment" to="PanelAbilities/ButtonDiscernment" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonDrama" to="PanelAbilities/ButtonDrama" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonGrappling" to="PanelAbilities/ButtonGrappling" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonHacking" to="PanelAbilities/ButtonHacking" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonHealing" to="PanelAbilities/ButtonHealing" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonKnowledge" to="PanelAbilities/ButtonKnowledge" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonMancy" to="PanelAbilities/ButtonMancy" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonNature" to="PanelAbilities/ButtonNature" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonNegotiation" to="PanelAbilities/ButtonNegotiation" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonStealth" to="PanelAbilities/ButtonStealth" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonThievery" to="PanelAbilities/ButtonThievery" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonTumbling" to="PanelAbilities/ButtonTumbling" method="Roll"]
+[connection signal="button_down" from="PanelAbilities/ButtonVehicles" to="PanelAbilities/ButtonVehicles" method="Roll"]
+[connection signal="button_down" from="PanelCombat/ButtonInitiative" to="PanelCombat/ButtonInitiative" method="Roll"]
+[connection signal="button_down" from="PanelCombat/ButtonMeleeAttack" to="PanelCombat/ButtonMeleeAttack" method="Roll"]
+[connection signal="button_down" from="PanelCombat/ButtonMeleeDamage" to="PanelCombat/ButtonMeleeDamage" method="RollEx"]
+[connection signal="button_down" from="PanelCombat/ButtonRangedAttack" to="PanelCombat/ButtonRangedAttack" method="Roll"]
+[connection signal="button_down" from="PanelCombat/ButtonRangedDamage" to="PanelCombat/ButtonRangedDamage" method="RollEx"]
+[connection signal="button_down" from="PanelCombat/ButtonSpellAttack" to="PanelCombat/ButtonSpellAttack" method="Roll"]
