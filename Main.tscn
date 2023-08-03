@@ -1832,4 +1832,5 @@ margin_bottom = 440.0
 min_value = -10.0
 max_value = 20.0
 
+[connection signal="ClassChosen" from="PanelInfo/OptionClass" to="CharacterManager" method="OnClassChosen"]
 [connection signal="item_selected" from="PanelInfo/OptionClass" to="PanelInfo/OptionClass" method="OnOptionClassItemSelected"]

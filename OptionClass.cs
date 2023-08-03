@@ -6,7 +6,7 @@ public class OptionClass : OptionButton
 	enum ClassChoices
 	{
 		Auromancer,
-		NIGHTAgent,
+		NightAgent,
 		Revolutionary,
 		Technomancer,
 		Terramancer,
@@ -14,7 +14,10 @@ public class OptionClass : OptionButton
 	}
 	private void OnOptionClassItemSelected(int index)
 	{
-		ClassChoices classChoice = (ClassChoices)index;
-		GD.Print(classChoice);
+		string classChoice = ((ClassChoices)index).ToString();
+		EmitSignal(nameof(ClassChosen), classChoice);
 	}
+	
+	[Signal]
+	private delegate void ClassChosen(string classChoice);
 }

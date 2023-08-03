@@ -8,7 +8,7 @@ public class CharacterManager : Node
 	//[Export]
 	//private NodePath _valStrengthPath;
 
-	Dictionary<string, int> selectedClassData = new Dictionary<string, int>(CharacterData.NightAgentData);
+	Dictionary<string, int> selectedClassData;
 
 	TextEdit valueStrength;
 	TextEdit valueAgility;
@@ -46,9 +46,16 @@ public class CharacterManager : Node
 		//valStrength.Text = "1";
 
 		GetNodes();
+		UpdateSelectedClass("Auromancer");
 		UpdateClassData();
 	}
-
+	
+	private void OnClassChosen(string classChoice)
+	{
+		UpdateSelectedClass(classChoice);
+		UpdateClassData();
+	}
+	
 	void GetNodes()
 	{
 		valueStrength = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueStrength");
@@ -80,6 +87,34 @@ public class CharacterManager : Node
 		valueRangedAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedAttack");
 		valueRangedDamage = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamage");
 		valueSpellAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueSpellAttack");
+	}
+
+	void UpdateSelectedClass(string classChoice)
+	{
+		switch (classChoice)
+		{
+			case "Auromancer":
+				selectedClassData = CharacterData.AuromancerData;
+				break;
+			case "NightAgent":
+				selectedClassData = CharacterData.NightAgentData;
+				break;
+			case "Revolutionary":
+				selectedClassData = CharacterData.RevolutionaryData;
+				break;
+			case "Technomancer":
+				selectedClassData = CharacterData.TechnomancerData;
+				break;
+			case "Terramancer":
+				selectedClassData = CharacterData.TerramancerData;
+				break;
+			case "Vanguard":
+				selectedClassData = CharacterData.VanguardData;
+				break;
+			default:
+				selectedClassData = CharacterData.AuromancerData;
+				break;
+		}
 	}
 	void UpdateClassData()
 	{
