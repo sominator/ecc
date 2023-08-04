@@ -4,6 +4,7 @@ namespace ECC
 {
 	internal static class CharacterData
 	{
+		//dictionaries to store individual class data
 		public static readonly Dictionary<string, int> AuromancerData = new Dictionary<string, int>
 		{
 			{"strength", 2},

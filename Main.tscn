@@ -1140,6 +1140,7 @@ margin_top = 25.0
 margin_right = 135.0
 margin_bottom = 44.0
 text = "0"
+readonly = true
 
 [node name="ValueAgility" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1147,6 +1148,7 @@ margin_top = 45.0
 margin_right = 135.0
 margin_bottom = 64.0
 text = "0"
+readonly = true
 
 [node name="ValueWill" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1154,6 +1156,7 @@ margin_top = 65.0
 margin_right = 135.0
 margin_bottom = 84.0
 text = "0"
+readonly = true
 
 [node name="ValuePersonality" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1161,6 +1164,7 @@ margin_top = 85.0
 margin_right = 135.0
 margin_bottom = 104.0
 text = "0"
+readonly = true
 
 [node name="ValueAthletics" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1168,6 +1172,7 @@ margin_top = 125.0
 margin_right = 135.0
 margin_bottom = 144.0
 text = "0"
+readonly = true
 
 [node name="ValueAwareness" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1175,6 +1180,7 @@ margin_top = 145.0
 margin_right = 135.0
 margin_bottom = 164.0
 text = "0"
+readonly = true
 
 [node name="ValueDiscernment" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1182,6 +1188,7 @@ margin_top = 165.0
 margin_right = 135.0
 margin_bottom = 184.0
 text = "0"
+readonly = true
 
 [node name="ValueDrama" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1189,6 +1196,7 @@ margin_top = 185.0
 margin_right = 135.0
 margin_bottom = 204.0
 text = "0"
+readonly = true
 
 [node name="ValueGrappling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1196,6 +1204,7 @@ margin_top = 205.0
 margin_right = 135.0
 margin_bottom = 224.0
 text = "0"
+readonly = true
 
 [node name="ValueHacking" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1203,6 +1212,7 @@ margin_top = 225.0
 margin_right = 135.0
 margin_bottom = 244.0
 text = "0"
+readonly = true
 
 [node name="ValueHealing" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1210,6 +1220,7 @@ margin_top = 245.0
 margin_right = 135.0
 margin_bottom = 264.0
 text = "0"
+readonly = true
 
 [node name="ValueKnowledge" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1217,6 +1228,7 @@ margin_top = 265.0
 margin_right = 135.0
 margin_bottom = 284.0
 text = "0"
+readonly = true
 
 [node name="ValueMancy" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1224,6 +1236,7 @@ margin_top = 285.0
 margin_right = 135.0
 margin_bottom = 304.0
 text = "0"
+readonly = true
 
 [node name="ValueNature" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1231,6 +1244,7 @@ margin_top = 305.0
 margin_right = 135.0
 margin_bottom = 324.0
 text = "0"
+readonly = true
 
 [node name="ValueNegotiation" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1238,6 +1252,7 @@ margin_top = 325.0
 margin_right = 135.0
 margin_bottom = 344.0
 text = "0"
+readonly = true
 
 [node name="ValueStealth" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1245,6 +1260,7 @@ margin_top = 345.0
 margin_right = 135.0
 margin_bottom = 364.0
 text = "0"
+readonly = true
 
 [node name="ValueThievery" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1252,6 +1268,7 @@ margin_top = 365.0
 margin_right = 135.0
 margin_bottom = 384.0
 text = "0"
+readonly = true
 
 [node name="ValueTumbling" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1259,6 +1276,7 @@ margin_top = 385.0
 margin_right = 135.0
 margin_bottom = 404.0
 text = "0"
+readonly = true
 
 [node name="ValueVehicles" type="TextEdit" parent="PanelAbilities"]
 margin_left = 93.0
@@ -1266,6 +1284,7 @@ margin_top = 405.0
 margin_right = 135.0
 margin_bottom = 424.0
 text = "0"
+readonly = true
 
 [node name="ButtonStrength" type="Button" parent="PanelAbilities"]
 margin_left = 138.5
@@ -1642,18 +1661,18 @@ margin_bottom = 20.0
 text = "COMBAT"
 
 [node name="LabelHP" type="Label" parent="PanelCombat"]
-margin_left = 29.5
+margin_left = 30.5
 margin_top = 30.0
-margin_right = 94.5
+margin_right = 95.5
 margin_bottom = 50.0
 text = "HP: "
 align = 2
 valign = 1
 
 [node name="LabelCeridium" type="Label" parent="PanelCombat"]
-margin_left = 140.0
+margin_left = 140.5
 margin_top = 30.0
-margin_right = 206.0
+margin_right = 206.5
 margin_bottom = 48.0
 text = "Ceridium: "
 align = 2
@@ -1669,9 +1688,9 @@ align = 2
 valign = 1
 
 [node name="LabelSpellDC" type="Label" parent="PanelCombat"]
-margin_left = 141.0
+margin_left = 141.5
 margin_top = 50.0
-margin_right = 205.0
+margin_right = 205.5
 margin_bottom = 68.0
 text = "Spell DC: "
 align = 2
@@ -1774,19 +1793,17 @@ margin_right = 233.5
 margin_bottom = 213.0
 text = "EQUIPMENT/CYBERNETICS"
 
-[node name="ValueHP" type="TextEdit" parent="PanelCombat"]
-margin_left = 95.0
+[node name="SpinBoxHP" type="SpinBox" parent="PanelCombat"]
+margin_left = 99.0
 margin_top = 30.0
-margin_right = 145.0
+margin_right = 149.0
 margin_bottom = 49.0
-text = "0"
 
-[node name="ValueCeridium" type="TextEdit" parent="PanelCombat"]
-margin_left = 205.0
+[node name="SpinBoxCeridium" type="SpinBox" parent="PanelCombat"]
+margin_left = 209.0
 margin_top = 30.0
-margin_right = 255.0
+margin_right = 259.0
 margin_bottom = 49.0
-text = "0"
 
 [node name="ValueAC" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1794,6 +1811,7 @@ margin_top = 50.0
 margin_right = 145.0
 margin_bottom = 69.0
 text = "0"
+readonly = true
 
 [node name="ValueDC" type="TextEdit" parent="PanelCombat"]
 margin_left = 204.5
@@ -1801,6 +1819,7 @@ margin_top = 50.0
 margin_right = 254.5
 margin_bottom = 69.0
 text = "0"
+readonly = true
 
 [node name="ValueInitiative" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1808,6 +1827,7 @@ margin_top = 70.0
 margin_right = 145.0
 margin_bottom = 89.0
 text = "0"
+readonly = true
 
 [node name="ValueMeleeAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1815,6 +1835,7 @@ margin_top = 90.0
 margin_right = 145.0
 margin_bottom = 109.0
 text = "0"
+readonly = true
 
 [node name="ValueMeleeDamageNumber" type="TextEdit" parent="PanelCombat"]
 margin_left = 40.0
@@ -1822,6 +1843,7 @@ margin_top = 110.0
 margin_right = 82.0
 margin_bottom = 129.0
 text = "0"
+readonly = true
 
 [node name="ValueMeleeDamageType" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1829,6 +1851,7 @@ margin_top = 110.0
 margin_right = 145.0
 margin_bottom = 130.0
 text = "0"
+readonly = true
 
 [node name="ValueMeleeDamageMod" type="TextEdit" parent="PanelCombat"]
 margin_left = 154.0
@@ -1836,6 +1859,7 @@ margin_top = 110.0
 margin_right = 196.0
 margin_bottom = 129.0
 text = "0"
+readonly = true
 
 [node name="ValueRangedAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1843,6 +1867,7 @@ margin_top = 130.0
 margin_right = 145.0
 margin_bottom = 149.0
 text = "0"
+readonly = true
 
 [node name="ValueRangedDamageNumber" type="TextEdit" parent="PanelCombat"]
 margin_left = 40.0
@@ -1850,6 +1875,7 @@ margin_top = 150.0
 margin_right = 82.0
 margin_bottom = 169.0
 text = "0"
+readonly = true
 
 [node name="ValueRangedDamageType" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1857,6 +1883,7 @@ margin_top = 150.0
 margin_right = 145.0
 margin_bottom = 169.0
 text = "0"
+readonly = true
 
 [node name="ValueRangedDamageMod" type="TextEdit" parent="PanelCombat"]
 margin_left = 154.0
@@ -1864,6 +1891,7 @@ margin_top = 150.0
 margin_right = 196.0
 margin_bottom = 169.0
 text = "0"
+readonly = true
 
 [node name="ValueSpellAttack" type="TextEdit" parent="PanelCombat"]
 margin_left = 95.0
@@ -1871,6 +1899,7 @@ margin_top = 170.0
 margin_right = 145.0
 margin_bottom = 189.0
 text = "0"
+readonly = true
 
 [node name="ButtonInitiative" type="Button" parent="PanelCombat"]
 margin_left = 200.0

@@ -3,6 +3,7 @@ using System;
 
 public class ButtonRollEx : Button
 {
+	//store the node paths of stat values and outputs by exposing them in the inspector
 	[Export]
 	private NodePath _numberPath;
 
@@ -20,10 +21,12 @@ public class ButtonRollEx : Button
 	private TextEdit _mod;
 	private Label _output;
 
+	//store new RNG
 	private RandomNumberGenerator rng = new RandomNumberGenerator();
 	
 	public override void _Ready()
 	{
+		//seed RNG
 		rng.Randomize();
 		_number = GetNode<Godot.TextEdit>(_numberPath);
 		_type = GetNode<Godot.TextEdit>(_typePath);
@@ -31,6 +34,7 @@ public class ButtonRollEx : Button
 		_output = GetNode<Godot.Label>(_outputPath);
 	}
 
+	//roll dice, feed to output label and print to console
 	private void RollEx()
 	{
 		int num = _number.Text.ToInt();

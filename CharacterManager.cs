@@ -5,8 +5,10 @@ using System.Collections.Generic;
 
 public class CharacterManager : Node
 {
+	//new dictionary to store data based on selected class
 	Dictionary<string, int> selectedClassData;
 
+	//store stat text edits
 	TextEdit valueStrength;
 	TextEdit valueAgility;
 	TextEdit valueWill;
@@ -26,8 +28,8 @@ public class CharacterManager : Node
 	TextEdit valueThievery;
 	TextEdit valueTumbling;
 	TextEdit valueVehicles;
-	TextEdit valueHP;
-	TextEdit valueCeridium;
+	SpinBox valueHP;
+	SpinBox valueCeridium;
 	TextEdit valueAC;
 	TextEdit valueDC;
 	TextEdit valueInitiative;
@@ -58,6 +60,7 @@ public class CharacterManager : Node
 	
 	void GetNodes()
 	{
+		//get stat values based on directory path
 		valueStrength = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueStrength");
 		valueAgility = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueAgility");
 		valueWill = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueWill");
@@ -77,8 +80,8 @@ public class CharacterManager : Node
 		valueThievery = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueThievery");
 		valueTumbling = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueTumbling");
 		valueVehicles = GetNode<Godot.TextEdit>("/root/Main/PanelAbilities/ValueVehicles");
-		valueHP = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueHP");
-		valueCeridium = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueCeridium");
+		valueHP = GetNode<Godot.SpinBox>("/root/Main/PanelCombat/SpinBoxHP");
+		valueCeridium = GetNode<Godot.SpinBox>("/root/Main/PanelCombat/SpinBoxCeridium");
 		valueAC = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueAC");
 		valueDC = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueDC");
 		valueInitiative = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueInitiative");
@@ -92,11 +95,13 @@ public class CharacterManager : Node
 		valueRangedDamageMod = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueRangedDamageMod");
 		valueSpellAttack = GetNode<Godot.TextEdit>("/root/Main/PanelCombat/ValueSpellAttack");
 
+		//get archetype option button
 		optionArchetype = GetNode<Godot.OptionButton>("/root/Main/PanelArchetype/OptionArchetype");
 	}
 
 	void UpdateSelectedClass(string classChoice)
 	{
+		//update class data and archetypes based on option button selection
 		switch (classChoice)
 		{
 			case "Auromancer":
@@ -136,6 +141,8 @@ public class CharacterManager : Node
 				break;
 		}
 	}
+
+	//update text edit values based on currently selected class data
 	void UpdateClassData()
 	{
 		valueStrength.Text = selectedClassData["strength"].ToString();
@@ -157,8 +164,8 @@ public class CharacterManager : Node
 		valueThievery.Text = selectedClassData["thievery"].ToString();
 		valueTumbling.Text = selectedClassData["tumbling"].ToString();
 		valueVehicles.Text = selectedClassData["vehicles"].ToString();
-		valueHP.Text = selectedClassData["hp"].ToString();
-		valueCeridium.Text = selectedClassData["ceridium"].ToString();
+		valueHP.Value = selectedClassData["hp"];
+		valueCeridium.Value = selectedClassData["ceridium"];
 		valueAC.Text = selectedClassData["ac"].ToString();
 		valueDC.Text = selectedClassData["dc"].ToString();
 		valueInitiative.Text = selectedClassData["initiative"].ToString();
