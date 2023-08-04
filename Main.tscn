@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://theme/Pixel Square 10.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://theme/sci-fi.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://CharacterManager.cs" type="Script" id=4]
 [ext_resource path="res://ButtonRoll.cs" type="Script" id=5]
 [ext_resource path="res://ButtonRollEx.cs" type="Script" id=6]
+[ext_resource path="res://ButtonMode.cs" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=92]
 size = 10
@@ -2237,12 +2238,13 @@ text = "Dark Mode"
 align = 2
 valign = 1
 
-[node name="CheckButton" type="CheckButton" parent="PanelArchetype"]
+[node name="ButtonMode" type="CheckButton" parent="PanelArchetype"]
 margin_left = 143.5
 margin_top = 512.5
 margin_right = 157.5
 margin_bottom = 521.5
 rect_scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 7 )
 
 [connection signal="ClassChosen" from="PanelInfo/OptionClass" to="CharacterManager" method="OnClassChosen"]
 [connection signal="item_selected" from="PanelInfo/OptionClass" to="PanelInfo/OptionClass" method="OnOptionClassItemSelected"]
@@ -2271,3 +2273,4 @@ rect_scale = Vector2( 1.5, 1.5 )
 [connection signal="button_down" from="PanelCombat/ButtonRangedAttack" to="PanelCombat/ButtonRangedAttack" method="Roll"]
 [connection signal="button_down" from="PanelCombat/ButtonRangedDamage" to="PanelCombat/ButtonRangedDamage" method="RollEx"]
 [connection signal="button_down" from="PanelCombat/ButtonSpellAttack" to="PanelCombat/ButtonSpellAttack" method="Roll"]
+[connection signal="toggled" from="PanelArchetype/ButtonMode" to="PanelArchetype/ButtonMode" method="OnToggled"]
